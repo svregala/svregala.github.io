@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- CSCI 571 Homework 3: Static Webpage using inline CSS-->
+<!-- Steve Regala - 7293040280 -->
+<!-- CSCI 571 Homework 3: Static Webpage using inline CSS -->
 
 <html>
    <head>
@@ -27,8 +28,8 @@
          text-decoration: none;
        }
       </style>
-      <!-- Original size - Pier(1000x564 px), Road(1380x690 px), Lake(768x576 px) -->
-      <!-- Obect fit for cropping -->
+
+      <!-- Obect fit for cropping: used on 3 main images -->
       <style> 
          .crop{
             width:750px;
@@ -36,10 +37,9 @@
             object-fit: cover;
          }  
       </style>
-
    </head>
-   <body>
 
+   <body>
       <!-- Table of header + main images + postscript + social media -->
       <table style="margin-left:auto; margin-right:auto; margin-top: 10px;">
          <tr><td>
@@ -61,6 +61,7 @@
          </td></tr>
 
          <!-- Images: Pier, Road, Lake -->
+         <!-- Original size - Pier(1000x564 px), Road(1380x690 px), Lake(768x576 px) -->
          <tr><td><img class="crop" src="https://csci571.com/hw/hw3/images/pier.jpg" alt="Pier"></td></tr>
          <tr><td><img class="crop" src="https://csci571.com/hw/hw3/images/road.jpeg" alt="Road"></td></tr>
          <tr><td><img class="crop" src="https://csci571.com/hw/hw3/images/lake.jpg" alt="Lake"></td></tr>
@@ -81,11 +82,7 @@
                </tr>
             </table>
          </td></tr>
-
       </table>
-
-      
    </body>
-
 
 </html>
