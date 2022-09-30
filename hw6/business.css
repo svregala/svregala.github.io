@@ -12,8 +12,8 @@
 .crop{
    width:1920px;
    height:700px;
-   margin-top: -300px;
    overflow:hidden;
+   object-fit: cover;
 }
 
 #img_background {
