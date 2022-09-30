@@ -15,6 +15,11 @@
    background-position: center;
 }
 
+#img_setting{
+   width:500px;
+   height:auto;
+}
+
 #business_search_font{
    font-family:june, sans-serif;
    color:white;
