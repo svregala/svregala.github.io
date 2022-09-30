@@ -12,7 +12,7 @@
 #img_background {
    background-image: url(hw6_photo/banner.jpeg);
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: bottom;
 }
 
 #img_setting{
