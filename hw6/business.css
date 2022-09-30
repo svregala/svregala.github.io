@@ -4,7 +4,7 @@
    margin-right: auto;
    margin-bottom: 300 px;
    width: 70%;
-   border-style: groove;
+   border-style: solid;
 }
 
 .img-container {
@@ -12,4 +12,5 @@
    text-align: center;
    color: white;
    overflow: hidden;
+   max-height: 360;
 }
