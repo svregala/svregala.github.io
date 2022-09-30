@@ -12,6 +12,7 @@
 .crop{
    width:1920px;
    height:auto;
+   margin-top: -200px;
    overflow:hidden;
 }
 
