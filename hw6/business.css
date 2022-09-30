@@ -1,0 +1,12 @@
+.wholetable {
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 100 px;
+}
+
+.container {
+   position: relative;
+   text-align: center;
+   color: white;
+}
