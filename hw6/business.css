@@ -9,5 +9,9 @@
 }
 
 .img_background {
+   position: relative;
+   color: white;
+   overflow: hidden;
+   max-height: 400;
    background-image: url(hw6_photo/banner.jpeg);
 }
