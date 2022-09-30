@@ -21,8 +21,15 @@
 }
 
 #business_search_font{
-   font-family:june, sans-serif;
+   font-family: june, sans-serif;
    color:white;
    font-weight:500;
+   margin-left: 50px;
+}
+
+#after_business_search{
+   font-family: june, sans-serif;
+   color: white;
+   font-weight: 250;
    margin-left: 50px;
 }
