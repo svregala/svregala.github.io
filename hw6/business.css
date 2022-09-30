@@ -3,10 +3,10 @@
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 300 px;
-   width: 70%;
+   width: 40%;
    border-style: solid;
    border-color: gray;
-   border:0;
+   border-collapse:collapse;
 }
 
 #img_background {
