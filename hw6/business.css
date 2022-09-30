@@ -9,6 +9,12 @@
    border-collapse:collapse;
 }
 
+.crop{
+   width:750px;
+   height:750px;
+   object-fit: cover;
+}
+
 #img_background {
    background-image: url(hw6_photo/banner.jpeg);
    background-repeat: no-repeat;
@@ -33,3 +39,4 @@
    font-weight: 350;
    margin-left: 50px;
 }
+
