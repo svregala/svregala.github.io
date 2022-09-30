@@ -5,13 +5,10 @@
    margin-bottom: 300 px;
    width: 70%;
    border-style: solid;
-   border-collapse: collapse;
+   border-color: gray;
 }
 
-.img_background {
-   position: relative;
-   color: white;
-   overflow: hidden;
-   max-height: 400;
+#img_background {
    background-image: url(hw6_photo/banner.jpeg);
+   background-repeat: no-repeat;
 }
