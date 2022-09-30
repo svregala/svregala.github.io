@@ -10,9 +10,9 @@
 }
 
 .crop{
-   width:750px;
-   height:750px;
-   object-fit: cover;
+   width:1920px;
+   height:auto;
+   overflow:hidden;
 }
 
 #img_background {
