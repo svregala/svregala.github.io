@@ -5,13 +5,9 @@
    margin-bottom: 300 px;
    width: 70%;
    border-style: solid;
-   
+   border-collapse: collapse;
 }
 
-.img-container {
-   position: relative;
-   text-align: center;
-   color: white;
-   overflow: hidden;
-   max-height: 360;
+.img_background {
+   background-image: url(hw6_photo/banner.jpeg);
 }
