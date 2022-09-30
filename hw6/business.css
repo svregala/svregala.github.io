@@ -12,3 +12,9 @@
    background-image: url(hw6_photo/banner.jpeg);
    background-repeat: no-repeat;
 }
+
+#business_search_font{
+   font-family:Georgia, sans-serif;
+   color:white;
+   font-weight: bold;
+}
