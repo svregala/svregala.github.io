@@ -18,5 +18,6 @@
 #business_search_font{
    font-family:sans-serif;
    color:white;
-   font-weight:300;
+   font-weight:500;
+   margin-left: 100px;
 }
