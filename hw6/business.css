@@ -3,7 +3,7 @@
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 300 px;
-   width: 35%;
+   width: 30%;
    border-style: solid;
    border-color: gray;
    border-collapse:collapse;
@@ -12,6 +12,7 @@
 #table_data{
    margin: 0px;
    border: 0px;
+   padding: 0px;
 }
 
 #img_container{
