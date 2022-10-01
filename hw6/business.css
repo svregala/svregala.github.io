@@ -21,6 +21,7 @@
    padding: 0px;
    overflow: hidden;
    max-height: 135px;
+   position:relative;
 }
 
 .crop{
@@ -34,17 +35,20 @@
    font-family: june, sans-serif;
    color:white;
    font-weight:500;
+   font-size: 40px;
    position:absolute;
    top: 40px;
-   left: 50px;
+   left: 40px;
 }
 
 #after_business_search{
    font-family: june, sans-serif;
    color: white;
    font-weight: 350;
-   top: 75 px;
-   left: 50px;
+   font-size: 40px;
+   position: absolute;
+   top: 75px;
+   left: 40px;
 }
 
 /*
