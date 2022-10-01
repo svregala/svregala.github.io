@@ -20,6 +20,7 @@
    background-image: url(hw6_photo/banner.jpeg);
    width:600px;
    height:700px;
+   object-fit: contain;
    background-repeat: no-repeat;
    background-position: bottom;
 }
