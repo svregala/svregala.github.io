@@ -23,7 +23,6 @@
 .crop{
    height:340px;
    width: 650px;
-   max-height: 160px;
    overflow:hidden;
    clip: rect(160px, 650px, 0px, 0px);
 }
