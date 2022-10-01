@@ -23,8 +23,9 @@
 .crop{
    height:340px;
    width: 650px;
+   clip: inset(160px 0px 0px 0px);
+   object-fit: cover;
    overflow:hidden;
-   clip: rect(160px, 650px, 0px, 0px);
 }
 
 #business_search_font{
