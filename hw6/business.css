@@ -56,10 +56,9 @@
    margin-left: 40px;
 }
 
-/*#keyword_field{
+#keyword_field{
    display: flex;
-   flex-direction: row;
-}*/
+}
 
 #keyword_label{
    font-family: Arial, sans-serif;
@@ -71,4 +70,5 @@
 #keyword_input{
    clear:left;
    margin:0px;
+   flex:1;
 }
