@@ -32,22 +32,22 @@
 }
 
 #business_search_font{
-   font-family: june, sans-serif;
+   font-family: Arial, sans-serif;
    color:white;
-   font-weight:500;
-   font-size: 40px;
+   font-weight:550;
+   font-size: 22px;
    position:absolute;
    top: 40px;
    left: 40px;
 }
 
 #after_business_search{
-   font-family: june, sans-serif;
+   font-family: Arial, sans-serif;
    color: white;
    font-weight: 350;
-   font-size: 40px;
+   font-size: 20px;
    position: absolute;
-   top: 75px;
+   top: 85px;
    left: 40px;
 }
 
