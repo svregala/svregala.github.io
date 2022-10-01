@@ -70,30 +70,29 @@
    margin-bottom: 4px;
 }
 
-.distCat{
+/*.distCat{
    display: inline-block;
-
-}
+}*/
 
 #keyword_input{
    clear:left;
    margin-bottom:18px;
 }
 
-#distance_input{
-   float:left;
-   margin-bottom:18px;
-   margin-right:30px;
-}
-
-#category_input{
-   float:left;
-   margin-bottom: 18px;
-}
-
 .input_size{
    width:518px;
    margin-bottom: 4px;
+}
+
+#distance_input{
+   /*float:left;*/
+   margin-bottom:18px;
+   /*margin-right:30px;*/
+}
+
+#category_input{
+   /*float:left;*/
+   margin-bottom: 18px;
 }
 
 .input_size_distance{
