@@ -26,7 +26,7 @@
 
 .crop{
    height:340px;
-   width: 600px;
+   width: 609px;
    top: -205px;
    position:relative;
 }
@@ -78,5 +78,9 @@
 
 .input_size{
    width:518px;
+   margin-bottom: 4px;
 }
 
+#input_size_distance{
+   width:160px;
+}
