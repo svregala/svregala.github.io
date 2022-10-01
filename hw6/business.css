@@ -68,7 +68,11 @@
    color: #6c84bc;
    float: left;
    margin-bottom: 4px;
-   
+}
+
+.distCat{
+   display: inline-block;
+
 }
 
 #keyword_input{
@@ -93,5 +97,6 @@
 }
 
 #input_size_distance{
+   display: inline-block;
    width:160px;
 }
