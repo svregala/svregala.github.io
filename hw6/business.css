@@ -25,6 +25,7 @@
    width: 650px;
    max-height: 160px;
    overflow:hidden;
+   clip-path: inset(170px 0px 0px 0px);
 }
 
 #business_search_font{
