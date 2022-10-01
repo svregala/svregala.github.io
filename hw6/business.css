@@ -23,6 +23,7 @@
 .crop{
    height:340px;
    width: 650px;
+   max-height: 160px;
    overflow:hidden;
 }
 
