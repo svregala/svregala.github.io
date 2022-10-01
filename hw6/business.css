@@ -54,12 +54,15 @@
 #input_form{
    margin-top: 20px;
    margin-left: 40px;
+   margin-right: 40px;
 }
 
 .required:after{
    content: "*";
    color:red;
 }
+
+
 
 #keyword_label{
    font-family: Arial, sans-serif;
@@ -73,5 +76,9 @@
 #keyword_input{
    clear:left;
    margin:0px;
-   
+
+}
+
+.input_size{
+   width:500px;
 }
