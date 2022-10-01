@@ -73,7 +73,18 @@
 
 #keyword_input{
    clear:left;
-   margin-bottom:30px;
+   margin-bottom:18px;
+}
+
+#distance_input{
+   float:left;
+   margin-bottom:18px;
+   margin-right:30px;
+}
+
+#category_input{
+   float:left;
+   margin-bottom: 18px;
 }
 
 .input_size{
