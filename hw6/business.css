@@ -62,7 +62,7 @@
    color:red;
 }
 
-#keyword_label{
+.label_fields{
    font-family: Arial, sans-serif;
    font-size: 15px;
    color: #6c84bc;
@@ -74,9 +74,9 @@
 #keyword_input{
    clear:left;
    margin:0px;
-
 }
 
 .input_size{
-   width:518;
+   width:518px;
 }
+
