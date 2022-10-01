@@ -56,15 +56,22 @@
    margin-left: 40px;
 }
 
+.required:after{
+   content: "*";
+   color:red;
+}
+
 #keyword_label{
    font-family: Arial, sans-serif;
    font-size: 15px;
    color: #6c84bc;
    float: left;
    margin-bottom: 4px;
+   
 }
 
 #keyword_input{
    clear:left;
    margin:0px;
+   
 }
