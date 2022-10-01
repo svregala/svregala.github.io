@@ -51,17 +51,11 @@
    left: 40px;
 }
 
-/*
-#img_background {
-   background-image: url(hw6_photo/banner.jpeg);
-   width:600px;
-   height:700px;
-   object-fit: contain;
-   background-repeat: no-repeat;
-   background-position: bottom;
+#input_form{
+   margin-top: 20px;
 }
 
-#img_setting{
-   width:900px;
-   height:auto;
-}*/
+#keyword_label{
+   font-size: 20px;
+   color: lightskyblue;
+}
