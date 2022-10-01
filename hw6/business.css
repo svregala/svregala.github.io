@@ -56,9 +56,19 @@
    margin-left: 35px;
 }
 
+#keyword_field{
+   display: flex;
+   flex-direction: row;
+}
+
 #keyword_label{
-   font-size: 20px;
+   font-size: 15px;
    color: #6c84bc;
    float: left;
    clear:both;
+}
+
+#keyword_input{
+   margin-top: 20px;
+   margin-left: 35px;
 }
