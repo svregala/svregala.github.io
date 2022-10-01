@@ -22,8 +22,8 @@
 
 .crop{
    height:340px;
-   /*width: 650px;*/
-   clip-path: inset(160px 0px 0px 0px);
+   width: 600px;
+   clip-path: inset(205px 0px 0px 0px);
    object-fit: cover;
    overflow:hidden;
 }
