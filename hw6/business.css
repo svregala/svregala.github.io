@@ -5,11 +5,11 @@
    margin-bottom: 300 px;
    width: 30%;
    border-style: solid;
-   border-color: gray;
+   border-color:lightgray;
    border-collapse:collapse;
 }
 
-#table_data{
+#table_data_banner{
    margin: 0px;
    border: 0px;
    padding: 0px;
@@ -34,14 +34,17 @@
    font-family: june, sans-serif;
    color:white;
    font-weight:500;
-   margin-left: 50px;
+   position:absolute;
+   top: 40px;
+   left: 50px;
 }
 
 #after_business_search{
    font-family: june, sans-serif;
    color: white;
    font-weight: 350;
-   margin-left: 50px;
+   top: 75 px;
+   left: 50px;
 }
 
 /*
