@@ -24,8 +24,8 @@
 .crop{
    height:340px;
    width: 600px;
-   clip-path: inset(205px 0px 0px 0px);
-   object-fit: cover;
+   top: -205px;
+   /*object-fit: cover;*/
    overflow:hidden;
 }
 
