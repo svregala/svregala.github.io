@@ -51,10 +51,6 @@
    left: 40px;
 }
 
-input, label{
-   display: block;
-}
-
 #input_form{
    margin-top: 20px;
    margin-left: 40px;
@@ -67,7 +63,7 @@ input, label{
 
 #keyword_label{
    font-family: Arial, sans-serif;
-   font-size: 18px;
+   font-size: 15px;
    color: #6c84bc;
    float: left;
 }
