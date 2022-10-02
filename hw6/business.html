@@ -20,13 +20,13 @@
          </tr></td>
          <!--Form-->
          <tr><td>
-            <form id="input_form">
-               <!--Keyword Section-->
+            <form class="input_form" method="get">
+               <!--Keyword section-->
                <div>
                   <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
                   <div id=keyword_input><input id="keyword" class="input_size" type="text" name="keyword" required></div>
                </div>
-               <!--Distance and Category Sections-->
+               <!--Distance and Category sections-->
                <div class="flex_container">
                   <div class="flex_child">
                      <div><label class="label_fields" for="distance">Distance(miles)</label><br></div>
@@ -44,7 +44,7 @@
                      </select></div>
                   </div>
                </div>
-               <!--Location Section-->
+               <!--Location section-->
                <div>
                   <div class="label_fields"><label class="required" for="location">Location</label></div>
                   <div id="location_input"><input id="location" class="input_size" type="text" name="location" required></div>
@@ -54,6 +54,12 @@
                   <hr id="horizontal_blue_line">
                   <label for="auto_location">Want us to auto-detect your location? Check here</label>
                   <input type="checkbox" id="auto_location" name="auto_location"> <!--onclick="location_auto_detection"-->
+               </div>
+
+               <!--Submit and Clear section-->
+               <div>
+                  <input class="submit_button" type="submit" value="SUBMIT">
+                  <input class="clear_button" type="reset" value="CLEAR">
                </div>
                
             </form>
