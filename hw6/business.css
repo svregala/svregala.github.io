@@ -109,8 +109,13 @@
 
 .location_auto_detection{
    font-family: Arial, sans-serif;
-   font-size: 20px;
+   font-size: 18px;
    color: #6c84bc;
    float: left;
    margin-bottom: 4px;
+}
+
+#horizontal_blue_line{
+   color:#6c84bc;
+   width:527px;
 }
