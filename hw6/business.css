@@ -70,10 +70,6 @@
    margin-bottom: 4px;
 }
 
-/*.distCat{
-   display: inline-block;
-}*/
-
 #keyword_input{
    clear:left;
    margin-bottom:18px;
@@ -95,14 +91,8 @@
    /*float:left;*/
    margin-bottom: 18px;
    position:relative;
-   top:8px;
-   left:10px;
+   top:3px;
 }
-
-/*.input_size_distance{
-   width:160px;
-   display: inline-block;
-}*/
 
 .flex_container {
    display: flex;
@@ -110,10 +100,4 @@
 
 .flex_child {
    flex: 1;
-   /*border: 2px solid yellow;*/
 }  
-
-/*
-.flex_child:first_child {
-   margin-right: 20px;
-} */
