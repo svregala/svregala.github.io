@@ -24,17 +24,17 @@
                <!--Keyword Section-->
                <div>
                   <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
-                  <div id=keyword_input><input class="input_size" type="text" name="keyword" required></div>
+                  <div id=keyword_input><input id="keyword" class="input_size" type="text" name="keyword" required></div>
                </div>
                <!--Distance and Category Sections-->
                <div class="flex_container">
                   <div class="flex_child">
                      <div><label class="label_fields" for="distance">Distance(miles)</label><br></div>
-                     <div><input id="distance_input" type="text" name="distance" placeholder="10" size="15"></div>
+                     <div><input id="distance" class="distance_input" type="text" name="distance" placeholder="10" size="15"></div>
                   </div>
                   <div class="flex_child">
                      <div class="label_fields"><label class="required" for="category">Category</label><br></div>
-                     <div><select id="category_input" name="category">
+                     <div><select id="category" class="category_input" name="category">
                         <option selected>Default</option>
                         <option>Arts & Entertainment</option>
                         <option>Health & Medical</option>
@@ -44,12 +44,16 @@
                      </select></div>
                   </div>
                </div>
-               <!--Location-->
+               <!--Location Section-->
                <div>
-                  <div class="label_fields">
-                     <label class="required" for="location">Location</label>
-                  </div>
-                  <div id="location_input"><input class="input_size" type="text" name="location" required></div>
+                  <div class="label_fields"><label class="required" for="location">Location</label></div>
+                  <div id="location_input"><input id="location" class="input_size" type="text" name="location" required></div>
+               </div>
+               <!--Location auto-detection section-->
+               <div class="location_auto_detection">
+                  <hr>
+                  <label for="auto_location">Want us to auto-detect your location? Check here</label>
+                  <input type="checkbox" id="auto_location" name="auto_location"> <!--onclick="location_auto_detection"-->
                </div>
                
             </form>

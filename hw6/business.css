@@ -80,14 +80,14 @@
    margin-bottom: 4px;
 }
 
-#distance_input{
+.distance_input{
    margin-bottom:18px;
    position:relative;
    top: 8px;
    left: -103px;
 }
 
-#category_input{
+.category_input{
    width:270px;
    margin-bottom: 18px;
    position:relative;
@@ -105,4 +105,12 @@
 #location_input{
    clear:left;
    margin-bottom:18px;
+}
+
+.location_auto_detection{
+   font-family: Arial, sans-serif;
+   font-size: 20px;
+   color: #6c84bc;
+   float: left;
+   margin-bottom: 4px;
 }
