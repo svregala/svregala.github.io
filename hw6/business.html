@@ -10,6 +10,7 @@
 
    <body>
       <table class="wholetable">
+         <!--Banner-->
          <tr><td id="table_data_banner">
             <div id="img_container">
                <img class="crop" src="hw6_photo/banner.jpeg" alt="Banner"></img>
@@ -17,29 +18,23 @@
                <div id="after_business_search">Fill out the form to get businesses near you!</div>
             </div>
          </tr></td>
-
+         <!--Form-->
          <tr><td>
             <form id="input_form">
                <!--Keyword Section-->
                <div>
-                  <div class="label_fields">
-                     <label class="required" for="keyword">Keyword</label>
-                  </div>
-                  <div id=keyword_input>
-                     <input class="input_size" type="text" name="keyword" required>
-                  </div>
+                  <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
+                  <div id=keyword_input><input class="input_size" type="text" name="keyword" required></div>
                </div>
-
                <!--Distance and Category Sections-->
                <div class="flex_container">
                   <div class="flex_child">
-                     <div><label class="label_fields" for="Distance(miles)">Distance(miles)</label><br></div>
-                     <div><input id="distance_input" type="text" name="Distance(miles)" placeholder="10" size="15"></div>
+                     <div><label class="label_fields" for="distance">Distance(miles)</label><br></div>
+                     <div><input id="distance_input" type="text" name="distance" placeholder="10" size="15"></div>
                   </div>
                   <div class="flex_child">
-                     <div class="label_fields"><label class="required" for="Category">Category</label><br></div>
-                     <!--<div><input id="category_input" type="text" name="Category" size="30" required></div>-->
-                     <div><select id="category_input" name="Category">
+                     <div class="label_fields"><label class="required" for="category">Category</label><br></div>
+                     <div><select id="category_input" name="category">
                         <option selected>Default</option>
                         <option>Arts & Entertainment</option>
                         <option>Health & Medical</option>
@@ -49,12 +44,13 @@
                      </select></div>
                   </div>
                </div>
-
                <!--Location-->
-               <!--<div>
-                  <div class="label_fields"></div>
-
-               </div>-->
+               <div>
+                  <div class="label_fields">
+                     <label class="required" for="location">Location</label>
+                  </div>
+                  <div id="location_input"><input class="input_size" type="text" name="location" required></div>
+               </div>
                
             </form>
          </td></tr>

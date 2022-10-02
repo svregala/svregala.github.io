@@ -100,4 +100,9 @@
 
 .flex_child {
    flex: 1;
-}  
+}
+
+#location_input{
+   clear:left;
+   margin-bottom:18px;
+}
