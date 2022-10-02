@@ -33,11 +33,19 @@
                <div class="flex_container">
                   <div class="flex_child">
                      <div><label class="label_fields" for="Distance(miles)">Distance(miles)</label><br></div>
-                     <div><input id=distance_input type="text" name="Distance(miles)" placeholder="10" size="15"></div>
+                     <div><input id="distance_input" type="text" name="Distance(miles)" placeholder="10" size="15"></div>
                   </div>
                   <div class="flex_child">
                      <div class="label_fields"><label class="required" for="Category">Category</label><br></div>
-                     <div><input id=category_input type="text" name="Category" size="30" required></div>
+                     <!--<div><input id="category_input" type="text" name="Category" size="30" required></div>-->
+                     <div><select id="category_input" name="Category" size="6">
+                        <option selected>Default</option>
+                        <option>Arts & Entertainment</option>
+                        <option>Health & Medical</option>
+                        <option>Hotels & Travel</option>
+                        <option>Food</option>
+                        <option>Professional Services</option>
+                     </select></div>
                   </div>
                </div>
                
