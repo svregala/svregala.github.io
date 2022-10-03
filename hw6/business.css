@@ -112,7 +112,7 @@
    font-size: 18px;
    color: #6c84bc;
    float: left;
-   margin-bottom: 4px;
+   margin-bottom: 25px;
 }
 
 #horizontal_blue_line{
@@ -122,9 +122,32 @@
 
 .submit_button{
    background-color: #6c84bc;
+   color: white;
+   margin: 0px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 24px;
+   padding-right: 24px;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   border-bottom-width: 4px;
+   border-bottom-color: darkgray;
+   font-size: 1em;
+   font-weight: lighter;
 }
 
 .clear_button{
-   border:black;
    background-color: #ffb706;
+   color: white;
+   border: 0.5px solid black;
+   margin: 0px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 24px;
+   padding-right: 24px;
+   border-bottom-width: 4px;
+   border-bottom-color: gray;
+   font-size: 1em;
+   font-weight: lighter;
 }
