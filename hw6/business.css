@@ -137,6 +137,10 @@
    font-weight: lighter;
 }
 
+.submit_button:hover{
+   background-color: lightgray;
+}
+
 .clear_button{
    background-color: #ffb706;
    color: white;
@@ -152,6 +156,6 @@
    font-weight: lighter;
 }
 
-button:hover{
-   background:lightgray
+.clear_button:hover{
+   background-color: lightgray;
 }
