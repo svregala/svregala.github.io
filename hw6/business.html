@@ -53,8 +53,8 @@
                <div class="location_auto_detection">
                   <hr id="horizontal_blue_line">
                   <label for="auto_location">Want us to auto-detect your location? Check here</label>
-                  <!--<input type="checkbox" id="auto_location" name="auto_location" onClick="location_auto_detection">-->
-                  <input type="checkbox" id="auto_location" name="auto_location">
+                  <input type="checkbox" id="auto_location" name="auto_location" onchange="location_auto_detection()">
+                  <!--<input type="checkbox" id="auto_location" name="auto_location">-->
                </div>
 
                <!--Submit and Clear section-->
@@ -68,11 +68,11 @@
 
       </table>
 
-      <!--<script src="business.js"></script>-->
-      <script>
+      <script src="business.js"></script>
+      <!--<script>
       document.getElementById('auto_location').onchange=function(){
          document.getElementById('location').disabled=this.checked;
-      };</script>
+      };</script>-->
    </body>
 
 </html>
