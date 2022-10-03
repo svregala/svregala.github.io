@@ -7,6 +7,7 @@
    border-style: solid;
    border-color:lightgray;
    border-collapse:collapse;
+   border:3px;
 }
 
 #table_data_banner{
@@ -118,6 +119,10 @@
 #horizontal_blue_line{
    color:#6c84bc;
    width:524px;
+}
+
+.submitClear{
+   margin-bottom: 15px;
 }
 
 .submit_button{
