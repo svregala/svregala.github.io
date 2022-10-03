@@ -7,7 +7,7 @@
    border-style: solid;
    border-color:lightgray;
    border-collapse:collapse;
-   border:3px;
+   border-width: 5px;
 }
 
 #table_data_banner{
@@ -143,7 +143,7 @@
 }
 
 .submit_button:hover{
-   color:white;
+   background-color:white;
 }
 
 .clear_button{
@@ -162,5 +162,5 @@
 }
 
 .clear_button:hover{
-   color:white;
+   background-color:white;
 }
