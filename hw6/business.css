@@ -97,6 +97,7 @@
 
 .flex_container {
    display: flex;
+   margin-bottom:7px;
 }
 
 .flex_child {
@@ -122,7 +123,7 @@
 }
 
 .submitClear{
-   margin-bottom: 15px;
+   margin-bottom: 24px;
 }
 
 .submit_button{
