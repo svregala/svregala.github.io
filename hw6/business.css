@@ -158,4 +158,5 @@
 
 .clear_button:hover{
    background-color: lightgray;
+   opacity: .4;
 }
