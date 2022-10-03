@@ -13,7 +13,5 @@ function location_auto_detection(){
 
 /* when clear button is pressed, reset the background color of location input back to original */
 function reset_location_color(){
-   document.getElementById('auto_location').onchange=function(){
-      document.getElementById('location').backgroundColor='';
-   };
+   document.getElementById('location').style.backgroundColor='';
 }
