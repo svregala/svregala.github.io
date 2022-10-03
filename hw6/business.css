@@ -126,7 +126,7 @@
 }
 
 .submit_button{
-   background-color: #6c84bc;
+   background-color: #657bb1;
    color: white;
    margin: 0px;
    padding-top: 12px;
@@ -143,8 +143,7 @@
 }
 
 .submit_button:hover{
-   background-color:white;
-   opacity: 0.5;
+   background-color:#8ca2db;
 }
 
 .clear_button{
@@ -163,6 +162,5 @@
 }
 
 .clear_button:hover{
-   background-color:white;
-   opacity: 0.5;
+   background-color:#bea25a;
 }
