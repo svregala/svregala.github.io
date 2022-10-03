@@ -138,7 +138,7 @@
 }
 
 .submit_button:hover{
-   background-color: lightgray;
+   color:white;
 }
 
 .clear_button{
@@ -157,6 +157,5 @@
 }
 
 .clear_button:hover{
-   background-color: lightgray;
-   opacity: .8;
+   color:white;
 }
