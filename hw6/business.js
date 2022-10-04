@@ -19,16 +19,23 @@ function reset_location_color(){
 }
 
 
-/**/
+
 function get_location(){
    var ip_json = new XMLHttpRequest();
-   ip_json.open("GET", "https://ipinfo.io/?token=1bb416f5a67c3e", true);
+   ip_json.open("GET", "https://ipinfo.io/json?token=1bb416f5a67c3e", true);
    ip_json.send();
    console.log(JSON.parse(ip_json.responseText).loc[0]);
    console.log(JSON.parse(ip_json.responseText).loc[1]);
 
    return 1;
 }
+
+/*function get_location(){
+   var token_url = "https://ipinfo.io/json?token=1bb416f5a67c3e";
+   $.get(token_url, function(data){
+
+   })
+}*/
 
 function submitted(){
    var user_location = get_location();
