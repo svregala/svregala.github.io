@@ -7,6 +7,7 @@ function location_auto_detection(){
          document.getElementById('location').style.backgroundColor='';
       }else{
          document.getElementById('location').style.backgroundColor='lightgray';
+
       }
    };
 }
@@ -15,4 +16,9 @@ function location_auto_detection(){
 function reset_location_color(){
    document.getElementById('location').style.backgroundColor='';
    document.getElementById('location').disabled=false;
+}
+
+
+function submitted(){
+   
 }

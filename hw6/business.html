@@ -20,7 +20,7 @@
          </tr></td>
          <!--Form-->
          <tr><td>
-            <form class="input_form" method="get">
+            <form class="input_form" method="get" onsubmit="return false">
                <!--Keyword section-->
                <div>
                   <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
@@ -58,7 +58,7 @@
 
                <!--Submit and Clear section-->
                <div class="submitClear">
-                  <input class="submit_button" type="submit" value="SUBMIT">
+                  <input class="submit_button" type="submit" value="SUBMIT" onclick="return submitted()">
                   <input class="clear_button" type="reset" value="CLEAR" onclick="reset_location_color()">
                </div>
                
