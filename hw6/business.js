@@ -19,7 +19,17 @@ function reset_location_color(){
 }
 
 
+/**/
+function get_location(){
+   var ip_json = new XMLHttpRequest();
+   ip_json.open("GET", "https://ipinfo.io/?token=1bb416f5a67c3e", true);
+   ip_json.send();
+   console.log(JSON.parse(ip_json.responseText).loc[0]);
+   console.log(JSON.parse(ip_json.responseText).loc[1]);
+
+   return 1;
+}
+
 function submitted(){
-   console.log(document.getElementById('keyword').value);
-   console.log(document.getElementById('distance').value);
+   var user_location = get_location();
 }
