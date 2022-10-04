@@ -22,4 +22,5 @@ function reset_location_color(){
 function submitted(){
    console.log(document.getElementById('keyword').value);
    console.log(document.getElementById('distance').value);
+   return true;
 }
