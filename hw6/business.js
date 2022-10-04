@@ -30,11 +30,17 @@ function reset_location_color(){
    return 1;
 }*/
 
-function get_location(){
+async function get_location(){
    var token_url = "https://ipinfo.io/json?token=1bb416f5a67c3e";
    var obj;
-   fetch(token_url).then(result=>result.json()).then(data=> obj=data);
+   /*var obj;
+   fetch(token_url).then(result=>result.json()).then(data=> obj=data)
+   console.log(obj);*/
+   const res = await fetch(token_url)
+   obj = await res.json();
    console.log(obj);
+
+   return obj;
 }
 
 function submitted(){
