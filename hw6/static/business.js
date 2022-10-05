@@ -1,4 +1,8 @@
-/*disable location input field after checking box*/
+/*
+CSCI 571: Homework 6 - Steve Regala - 7293040280 - Fall 2022
+*/
+
+/* disable location input field after checking box */
 function location_auto_detection(){
    document.getElementById('auto_location').onchange=function(){
       document.getElementById('location').disabled=this.checked;
@@ -30,7 +34,7 @@ function reset_location_color(){
 /* 
 ** CITATION **: For the functions auto_location() & input_location(), the following website was referenced
 to invoke IPInfo API and Google Geocoding API: https://dmitripavlutin.com/javascript-fetch-async-await/.
-Lines 36-56.
+Lines 39-60.
  */
 /* IPInfo for auto detection for location - AUTO DETECTION */
 async function auto_location(){
@@ -58,7 +62,6 @@ async function input_location(){
 
 /* Main function to send to backend*/
 async function submitted(){
-
    var yelp_url = "https://api.yelp.com/v3/businesses/search?term=";
    var given_keyword = document.getElementById("keyword").value;
 
@@ -88,5 +91,4 @@ async function submitted(){
 
    yelp_url = yelp_url + given_keyword + "&latitude=" + location_arr[0] + "&longitude=" + location_arr[1] + "&categories=" + given_category + "&radius=" + given_distance;
    console.log('YELP URL', yelp_url);
-
 }
