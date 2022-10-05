@@ -20,17 +20,14 @@ function reset_location_color(){
 
 
 
-/*function get_location(){
-   var ip_json = new XMLHttpRequest();
-   ip_json.open("GET", "https://ipinfo.io/json?token=1bb416f5a67c3e", true);
-   ip_json.send();
-   console.log(JSON.parse(ip_json.responseText).loc[0]);
-   console.log(JSON.parse(ip_json.responseText).loc[1]);
-
-   return 1;
+/*
+   YELP API KEY: goP5OwxHhWstZj6srqwEvGaaNDp4S8O5v91HCwpuvh8rv_c_xm7m-quBNK_4cz-ck_Poui16PLnf-MjxdZK9KUHD6ZoHeqr0EcyODA8khRr7MI1q2rn617GmvD82Y3Yx
+   IP INFO KEY: 1bb416f5a67c3e
+   GOOGLE API KEY: AIzaSyBTLfiP5LAhW1bBZDAQaJiu-A1UfRUu7P4
 }*/
 
-async function get_location(){
+/* IPInfo for auto detection for location */
+async function auto_location(){
    var token_url = "https://ipinfo.io/json?token=1bb416f5a67c3e";
    var obj;
    /*var obj;
@@ -38,11 +35,23 @@ async function get_location(){
    console.log(obj);*/
    const res = await fetch(token_url)
    obj = await res.json();
-   console.log(obj);
+   console.log('Coordinates', obj["loc"]);
+   var auto_location_array=obj["loc"].split(',');
 
-   return obj;
+   return auto_location_array;
 }
 
+/* Google API for location info */
+function input_location(){
+   var google_map_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + document.getElementById('location').value + "&key=AIzaSyBTLfiP5LAhW1bBZDAQaJiu-A1UfRUu7P4";
+   console.log(google_map_url);
+}
+
+
+/* Main function to send to backend*/
 function submitted(){
-   var user_location = get_location();
+
+
+   var user_location = auto_location();
+   var temp_location = input_location();
 }
