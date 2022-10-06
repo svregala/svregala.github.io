@@ -22,19 +22,10 @@ function reset_location_color(){
    document.getElementById('location').disabled=false;
 }
 
-
-
-/*
-   YELP API KEY: goP5OwxHhWstZj6srqwEvGaaNDp4S8O5v91HCwpuvh8rv_c_xm7m-quBNK_4cz-ck_Poui16PLnf-MjxdZK9KUHD6ZoHeqr0EcyODA8khRr7MI1q2rn617GmvD82Y3Yx
-   IP INFO KEY: 1bb416f5a67c3e
-   GOOGLE API KEY: AIzaSyBTLfiP5LAhW1bBZDAQaJiu-A1UfRUu7P4
-}*/
-
-
 /* 
-** CITATION **: For the functions auto_location() & input_location(), the following website was referenced
+CITATION: For the functions auto_location() & input_location(), the following website was referenced
 to invoke IPInfo API and Google Geocoding API: https://dmitripavlutin.com/javascript-fetch-async-await/.
-Lines 39-60.
+Lines 31-51.
  */
 /* IPInfo for auto detection for location - AUTO DETECTION */
 async function auto_location(){
@@ -59,10 +50,9 @@ async function input_location(){
    return location_array;
 }
 
-
 /* Main function to send to backend*/
 async function submitted(){
-   var gcp_url = "https://business-5718.wl.r.appspot.com/business/"
+   var gcp_url = "https://business-5718.wl.r.appspot.com/business?"
    //var yelp_url = "https://api.yelp.com/v3/businesses/search?term=";
    var given_keyword = document.getElementById("keyword").value;
 
@@ -90,20 +80,11 @@ async function submitted(){
       location_arr= await input_location();
    }
 
-   yelp_url = yelp_url + given_keyword + "&latitude=" + location_arr[0] + "&longitude=" + location_arr[1] + "&categories=" + given_category + "&radius=" + given_distance;
-   console.log('YELP URL', yelp_url);
-
-
-   //gcp_url += yelp_url;
-   gcp_url = gcp_url + given_keyword + '&' + location_arr[0] + '&' + location_arr[1] + '&' + given_category + '&' + given_distance ;
-
-   /* Send Yelp URL to backend */
-   /*var backend_res;
-   fetch(gcp_url).then(res=>res.json()).then(data=>backend_res=data)
-   console.log(backend_res);*/
+   gcp_url = gcp_url + 'term=' + given_keyword + '&latitude=' + location_arr[0] + '&longitude=' + location_arr[1] + '&category=' + given_category + '&radius=' + given_distance;
+   console.log('GCP URL', gcp_url);
 
    const response = await fetch(gcp_url);
    const test_response = await response.json();
+   const temp = await test_response;
    console.log(test_response);
-
 }

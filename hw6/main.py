@@ -18,22 +18,30 @@ yelp_API_url = 'https://api.yelp.com/v3/businesses/search'
 def homepage():
    return app.send_static_file('business.html')
 
-@app.route('/business/<yelp_info_string>', methods=["GET"])
-def get_businesses(yelp_info_string):
-   #response_yelp = requests.get(url=yelp_url, headers=HEADER)
-   #return jsonify(yelp_url)
-   #return response_yelp
+@app.route('/business', methods=["GET"])
+def get_businesses():
 
-   yelp_info_array = str.split('&')
-   url_params = {'term': yelp_info_array[0], 
-                  'coordinates': {'latitude':yelp_info_array[1], 'longitude':yelp_info_array[2]},
-                  'categories': yelp_info_array[3], 
-                  'radius': yelp_info_array[4]}
+   # CITATION: https://stackoverflow.com/questions/34671217/in-flask-what-is-request-args-and-how-is-it-used
+   # Lines 26
+   yelp_info_dictionary = request.args.to_dict()
+
+   url_params = {'term': yelp_info_dictionary["term"], 
+                  'latitude':yelp_info_dictionary["latitude"], 
+                  'longitude':yelp_info_dictionary["longitude"],
+                  'categories': yelp_info_dictionary["category"], 
+                  'radius': yelp_info_dictionary["radius"]
+                   }
 
    response = requests.get(yelp_API_url, headers=headers_key, params=url_params)
-	#response_json = response.json()
+   response_json = response.json()
+   response_string = json.dumps(response_json)
+   response_load = json.loads(response_string)
 
-   return response.json()
+   # grab only businesses key
+   business_dict = {'businesses': response_load['businesses']}
+   return_response = json.dumps(business_dict)
+
+   return return_response
 
    
 
