@@ -167,3 +167,92 @@
 .clear_button:hover{
    background-color:#caac5f;
 }
+
+.final_result{
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 90px;
+   width:85%;
+   font-family: Arial, sans-serif;
+}
+
+.final_result_table{
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 90px;
+   width:85%;
+   background-color: lightgray;
+   table-layout: fixed;
+}
+
+.table_head{
+   background-color: rgb(82, 118, 202);
+   color:black;
+   height:50px;
+   font-weight: bold;
+}
+
+.no_record{
+   width: 50%;
+   background-color: lightgrey;
+}
+
+.number_setting{
+   width:24px;
+   border:none;
+   text-align: center;
+   font-weight: bold;
+}
+
+.image_setting{
+   width:64px;
+   border:none;
+   text-align: center;
+   font-weight: bold;
+}
+
+.business_setting{
+   width:245px;
+   border:none;
+   text-align: center;
+   font-weight: bold;
+}
+
+.rating_setting{
+   width:88px;
+   border:none;
+   text-align: center;
+   font-weight: bold;
+}
+
+.distance_setting{
+   width:95px;
+   border:none;
+   text-align: center;
+   font-weight: bold;
+}
+
+.table_row_setting{
+   height:120px;
+   background-color: white;
+   text-align: center;
+}
+
+.image_detail{
+   border:none;
+   background-color: white;
+   background-position: center;
+   position:relative;
+   height:120px;
+   width: 100%;
+   display: block;
+}
+/* Picture
+border: none;
+    background-color: white;
+    background-image: url('banner/banner.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+*/

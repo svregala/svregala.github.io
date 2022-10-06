@@ -85,6 +85,17 @@ async function submitted(){
 
    const response = await fetch(gcp_url);
    const test_response = await response.json();
-   const temp = await test_response;
-   console.log(test_response);
+   const result = await test_response;
+   console.log(result);
+
+   console.log(typeof result);
+
+   // display results from returned json file
+   display_results(result);
+}
+
+function display_results(json_result){
+
+
+
 }
