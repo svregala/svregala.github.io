@@ -62,7 +62,8 @@ async function input_location(){
 
 /* Main function to send to backend*/
 async function submitted(){
-   var yelp_url = "https://api.yelp.com/v3/businesses/search?term=";
+   var gcp_url = "https://business-5718.wl.r.appspot.com/business/"
+   //var yelp_url = "https://api.yelp.com/v3/businesses/search?term=";
    var given_keyword = document.getElementById("keyword").value;
 
    var given_category;
@@ -91,4 +92,18 @@ async function submitted(){
 
    yelp_url = yelp_url + given_keyword + "&latitude=" + location_arr[0] + "&longitude=" + location_arr[1] + "&categories=" + given_category + "&radius=" + given_distance;
    console.log('YELP URL', yelp_url);
+
+
+   //gcp_url += yelp_url;
+   gcp_url = gcp_url + given_keyword + '&' + location_arr[0] + '&' + location_arr[1] + '&' + given_category + '&' + given_distance ;
+
+   /* Send Yelp URL to backend */
+   /*var backend_res;
+   fetch(gcp_url).then(res=>res.json()).then(data=>backend_res=data)
+   console.log(backend_res);*/
+
+   const response = await fetch(gcp_url);
+   const test_response = await response.json();
+   console.log(test_response);
+
 }
