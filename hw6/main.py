@@ -25,6 +25,8 @@ def get_businesses():
    # Lines 26
    yelp_info_dictionary = request.args.to_dict()
 
+   # CITATION: https://github.com/TexasCodes/FlaskYelpFusion/blob/master/Flaskvenvapp
+   # Lines 30-40
    url_params = {'term': yelp_info_dictionary["term"], 
                   'latitude':yelp_info_dictionary["latitude"], 
                   'longitude':yelp_info_dictionary["longitude"],
@@ -42,8 +44,6 @@ def get_businesses():
    return_response = json.dumps(business_dict)
 
    return return_response
-
-   
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)

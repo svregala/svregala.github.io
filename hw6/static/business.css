@@ -222,6 +222,10 @@
    font-weight: bold;
 }
 
+.business_setting:hover{
+   cursor:pointer;
+}
+
 .rating_setting{
    width:88px;
    border:none;
@@ -229,11 +233,19 @@
    font-weight: bold;
 }
 
+.rating_setting:hover{
+   cursor:pointer;
+}
+
 .distance_setting{
    width:95px;
    border:none;
    text-align: center;
    font-weight: bold;
+}
+
+.distance_setting:hover{
+   cursor: pointer;
 }
 
 .table_row_setting{
@@ -250,4 +262,9 @@
    height:120px;
    width: 100%;
    display: block;
+}
+
+.business_name:hover{
+   color:rgb(188, 182, 182);
+   cursor: pointer;
 }

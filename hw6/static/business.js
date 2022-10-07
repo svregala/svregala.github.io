@@ -18,6 +18,7 @@ function location_auto_detection(){
 
 /* when clear button is pressed, reset the background color of location input back to original */
 function reset_location_color(){
+   clear_existing_results();
    document.getElementById('location').style.backgroundColor='';
    document.getElementById('location').disabled=false;
 }
@@ -42,19 +43,31 @@ async function auto_location(){
 async function input_location(){
    var google_map_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + document.getElementById('location').value + "&key=AIzaSyBTLfiP5LAhW1bBZDAQaJiu-A1UfRUu7P4";
    var obj;
-   const res = await fetch(google_map_url)
-   obj = await res.json();
-   var location_array=[];
-   location_array.push(obj["results"]["0"]["geometry"]["location"]["lat"], obj["results"]["0"]["geometry"]["location"]["lng"]);
-   console.log('Input From User Coordinates', location_array);
-   return location_array;
+   try{
+      const res = await fetch(google_map_url)
+      obj = await res.json();
+      var location_array=[];
+      location_array.push(obj["results"]["0"]["geometry"]["location"]["lat"], obj["results"]["0"]["geometry"]["location"]["lng"]);
+      console.log('Input From User Coordinates', location_array);
+      return location_array;
+   }catch(err){
+      console.log("Invalid location could not be fetched by Google Geocoding API");
+      clear_existing_results();
+      document.getElementById('no_result').innerHTML = '<div class="no_record">No record has been found</div>';
+   }
 }
+
+/* Original json array returned by yelp */
+var original_json_array=[];
 
 /* Main function to send to backend*/
 async function submitted(){
+   clear_existing_results();
    var gcp_url = "https://business-5718.wl.r.appspot.com/business?"
-   //var yelp_url = "https://api.yelp.com/v3/businesses/search?term=";
    var given_keyword = document.getElementById("keyword").value;
+   if(given_keyword==''){
+      return;
+   }
 
    var given_category;
    if(document.getElementById("category").value=='Default'){
@@ -77,6 +90,9 @@ async function submitted(){
    if(document.getElementById('auto_location').checked){
       location_arr= await auto_location();
    }else{
+      if(document.getElementById('location').value==''){
+         return;
+      }
       location_arr= await input_location();
    }
 
@@ -88,14 +104,125 @@ async function submitted(){
    const result = await test_response;
    console.log(result);
 
-   console.log(typeof result);
+   var arr_result = result['businesses'];
+   console.log('Array size:', arr_result.length);
+   console.log('Array details are:', arr_result);
+   original_json_array = arr_result;
 
    // display results from returned json file
-   display_results(result);
+   display_results(arr_result);
 }
 
+/*
+Clear existing results in the following scenarios:
+submit button is pressed, clear button is pressed
+*/
+function clear_existing_results(){
+   document.getElementById('head_of_table_search').innerHTML='';
+   document.getElementById('table_body').innerHTML='';
+   document.getElementById('no_result').innerHTML='';
+}
+
+/* Global array used for sorting */
+var json_order_array=[];
+
+/* Display results */
 function display_results(json_result){
 
+   /* Current array order of results */
+   json_order_array=[];
+   if(json_result.length==0){
+      document.getElementById('no_result').innerHTML = '<div class="no_record">No record has been found</div>';
+   }else{
+      // set table headers
+      var table_head_row=document.getElementById('head_of_table_search');
+      var create_row=document.createElement('tr');
+      create_row.innerHTML='<th id="number_name" class="number_setting">No.</th><th id="image_name" class="image_setting">Image</th><th id="business_name" class="business_setting" onclick="sort_table(1, name_ascending)">Business Name</th><th id="rating_name" class="rating_setting" onclick="sort_table(2, rating_ascending)">Rating</th><th id="distance_name" class="distance_setting" onclick="sort_table(3, distance_ascending)">Distance(miles)</th>';
+      table_head_row.appendChild(create_row);
 
+      // create following table rows
+      var table_body=document.getElementById('table_body');
+      for(var i=0; i<json_result.length; i++){
+         var number = i+1;
+         var picture = json_result[i]['image_url'];
+         var name_business = json_result[i]['name'];
+         var rating = json_result[i]['rating'];
+         var distance = parseFloat(json_result[i]['distance'])/1609.344;
+         json_order_array.push({'picture':picture, 'name':name_business, 'rating':rating, 'distance':distance});
+
+         var table_row=document.createElement('tr');
+         table_row.className="table_row_setting";
+         table_row.innerHTML='<td>' + number + '</td><td><img class="image_detail" src=' + picture + '></td><td><p class="business_name">' + name_business + '</p></td><td>' + rating + '</td><td>' + distance.toFixed(2) + '</td>';
+         table_body.appendChild(table_row);
+      }
+      
+      // scroll to top of table
+      document.getElementById('final_result').scrollIntoView();
+   }
+
+}
+
+/* Global variables for sorting */
+var name_ascending = true;
+var rating_ascending = true;
+var distance_ascending = true;
+
+/* Sort table */
+function sort_table(col, sort_order) {
+   // business name
+   if(col==1){
+      // sort LOW to HIGH
+      if(name_ascending==true){
+         json_order_array.sort((a,b)=>(a.name>b.name?1:-1));
+         name_ascending=false;
+      }
+      // sort HIGH to LOW
+      else{
+         json_order_array.sort((a,b)=>(a.name<b.name?1:-1));
+         name_ascending=true;
+      }
+
+   }
+   // rating
+   else if(col==2){
+      // sort LOW to HIGH
+      if(rating_ascending==true){
+         json_order_array.sort((a,b)=>(a.rating>b.rating?1:-1));
+         rating_ascending=false;
+      }
+      // sort HIGH to LOW
+      else{
+         json_order_array.sort((a,b)=>(a.rating<b.rating?1:-1));
+         rating_ascending=true;
+      }
+   }
+   // distance
+   else{
+      // sort LOW to HIGH
+      if(distance_ascending==true){
+         json_order_array.sort((a,b)=>(a.distance>b.distance?1:-1));
+         distance_ascending=false;
+      }
+      // sort HIGH to LOW
+      else{
+         json_order_array.sort((a,b)=>(a.distance<b.distance?1:-1));
+         distance_ascending=true;
+      }
+   }
+   
+   document.getElementById('table_body').innerHTML='';
+   var current_body = document.getElementById('table_body');
+   // populate rows
+   for(var i=0; i<json_order_array.length; i++){
+      var num = i+1;
+      var new_row=document.createElement('tr');
+      new_row.className='table_row_setting';
+      new_row.innerHTML='<td>' + num + '</td><td><img class="image_detail" src=' + json_order_array[i]['picture'] + '></td><td><p class="business_name">' + json_order_array[i]['name'] + '</p></td><td>' + json_order_array[i]['rating'] + '</td><td>' + json_order_array[i]['distance'] + '</td>';
+      current_body.appendChild(new_row);
+   }
+}
+
+/* Display more details about a place when clicking its name */
+function more_details(){
 
 }
