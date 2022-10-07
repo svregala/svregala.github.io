@@ -12,6 +12,7 @@ app = Flask(__name__, static_url_path='')
 YELP_API_KEY = "goP5OwxHhWstZj6srqwEvGaaNDp4S8O5v91HCwpuvh8rv_c_xm7m-quBNK_4cz-ck_Poui16PLnf-MjxdZK9KUHD6ZoHeqr0EcyODA8khRr7MI1q2rn617GmvD82Y3Yx"
 headers_key = {'Authorization': 'Bearer %s' %YELP_API_KEY}
 yelp_API_url = 'https://api.yelp.com/v3/businesses/search'
+yelp_API_url_DETAILS = 'https://api.yelp.com/v3/businesses/'
 
 # root page of our web application (home page)
 @app.route('/')
@@ -44,6 +45,26 @@ def get_businesses():
    return_response = json.dumps(business_dict)
 
    return return_response
+
+@app.route('/details', methods=["GET"])
+def get_details():
+   
+   business_ID=request.args.to_dict()
+   detail_url = yelp_API_url_DETAILS+business_ID["id"]
+
+   res_details = requests.get(detail_url, headers=headers_key)
+   details_json = res_details.json()
+   details_string = json.dumps(details_json)
+   details_load = json.loads(details_string)
+
+   details_dict = {'status':details_load['hours'][0]["is_open_now"],'photos':details_load['photos'],
+                  'address':details_load['location'],'transact_support':details_load['transactions'],
+                  'category':details_load['categories'],'phone':details_load['display_phone'],
+                  'price':details_load['price']}
+   details_return = json.dumps(details_dict)
+
+   return details_return
+
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)

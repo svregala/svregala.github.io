@@ -4,7 +4,6 @@
    margin-top: 30px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 300 px;
    width: 30%;
    border-style: solid;
    border-color:lightgray;
@@ -267,4 +266,15 @@
 .business_name:hover{
    color:rgb(188, 182, 182);
    cursor: pointer;
+}
+
+.details{
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 110px;
+   width:85%;
+   font-family: Arial, sans-serif;
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: bold;
 }

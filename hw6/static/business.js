@@ -26,7 +26,7 @@ function reset_location_color(){
 /* 
 CITATION: For the functions auto_location() & input_location(), the following website was referenced
 to invoke IPInfo API and Google Geocoding API: https://dmitripavlutin.com/javascript-fetch-async-await/.
-Lines 31-51.
+Lines 32-48.
  */
 /* IPInfo for auto detection for location - AUTO DETECTION */
 async function auto_location(){
@@ -56,9 +56,6 @@ async function input_location(){
       document.getElementById('no_result').innerHTML = '<div class="no_record">No record has been found</div>';
    }
 }
-
-/* Original json array returned by yelp */
-var original_json_array=[];
 
 /* Main function to send to backend*/
 async function submitted(){
@@ -107,7 +104,6 @@ async function submitted(){
    var arr_result = result['businesses'];
    console.log('Array size:', arr_result.length);
    console.log('Array details are:', arr_result);
-   original_json_array = arr_result;
 
    // display results from returned json file
    display_results(arr_result);
@@ -148,18 +144,18 @@ function display_results(json_result){
          var name_business = json_result[i]['name'];
          var rating = json_result[i]['rating'];
          var distance = parseFloat(json_result[i]['distance'])/1609.344;
-         json_order_array.push({'picture':picture, 'name':name_business, 'rating':rating, 'distance':distance});
+         var item_ID = json_result[i]['id'];
 
+         json_order_array.push({'picture':picture, 'name':name_business, 'rating':rating, 'distance':distance, 'id':item_ID});
          var table_row=document.createElement('tr');
          table_row.className="table_row_setting";
-         table_row.innerHTML='<td>' + number + '</td><td><img class="image_detail" src=' + picture + '></td><td><p class="business_name">' + name_business + '</p></td><td>' + rating + '</td><td>' + distance.toFixed(2) + '</td>';
+         table_row.innerHTML='<td>' + number + '</td><td><img class="image_detail" src=' + picture + '></td><td><p class="business_name" onclick="get_more_details(\'' + item_ID + '\')">' + name_business + '</p></td><td>' + rating + '</td><td>' + distance.toFixed(2) + '</td>';
          table_body.appendChild(table_row);
       }
       
       // scroll to top of table
       document.getElementById('final_result').scrollIntoView();
    }
-
 }
 
 /* Global variables for sorting */
@@ -167,7 +163,11 @@ var name_ascending = true;
 var rating_ascending = true;
 var distance_ascending = true;
 
-/* Sort table */
+/* 
+Sort table
+CITATION: https://tutorial.eyehunts.com/js/sort-array-of-objects-javascript-by-key-value-example-code/
+Link was reference for lines 176,177,181,182,189,190,194,195,202,203,207,208
+*/
 function sort_table(col, sort_order) {
    // business name
    if(col==1){
@@ -181,7 +181,6 @@ function sort_table(col, sort_order) {
          json_order_array.sort((a,b)=>(a.name<b.name?1:-1));
          name_ascending=true;
       }
-
    }
    // rating
    else if(col==2){
@@ -217,12 +216,29 @@ function sort_table(col, sort_order) {
       var num = i+1;
       var new_row=document.createElement('tr');
       new_row.className='table_row_setting';
-      new_row.innerHTML='<td>' + num + '</td><td><img class="image_detail" src=' + json_order_array[i]['picture'] + '></td><td><p class="business_name">' + json_order_array[i]['name'] + '</p></td><td>' + json_order_array[i]['rating'] + '</td><td>' + json_order_array[i]['distance'] + '</td>';
+      var temp_name = json_order_array[i]['name'];
+      var item_ID = json_order_array[i]['id'];
+      new_row.innerHTML='<td>' + num + '</td><td><img class="image_detail" src=' + json_order_array[i]['picture'] + '></td><td><p class="business_name" onclick="get_more_details(\'' + item_ID + '\')">' + temp_name + '</p></td><td>' + json_order_array[i]['rating'] + '</td><td>' + json_order_array[i]['distance'].toFixed(2) + '</td>';
       current_body.appendChild(new_row);
    }
 }
 
-/* Display more details about a place when clicking its name */
-function more_details(){
+/* Get more details about the business */
+async function get_more_details(clicked_ID){
+   var gcp = "https://business-5718.wl.r.appspot.com/details?"
+   gcp = gcp + 'id=' + clicked_ID;
+   console.log('Detail URL', gcp);
 
+   const response = await fetch(gcp);
+   const test_response = await response.json();
+   const result = await test_response;
+   console.log('Array size:',result.length);
+   console.log('Array details:'. result);
+
+   business_details(result);
+}
+
+/* Display more details about a place when clicking its name */
+function business_details(details){
+   console.log('Test test test it worked:',details);
 }
