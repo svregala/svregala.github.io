@@ -60,7 +60,7 @@ def get_details():
    details_dict = {'status':details_load['hours'][0]["is_open_now"],'photos':details_load['photos'],
                   'address':details_load['location'],'transact_support':details_load['transactions'],
                   'category':details_load['categories'],'phone':details_load['display_phone'],
-                  'price':details_load['price']}
+                  'price':details_load['price'], 'url':details_load['url']}
    details_return = json.dumps(details_dict)
 
    return details_return

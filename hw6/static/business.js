@@ -232,8 +232,6 @@ async function get_more_details(clicked_ID){
    const response = await fetch(gcp);
    const test_response = await response.json();
    const result = await test_response;
-   console.log('Array size:',result.length);
-   console.log('Array details:'. result);
 
    business_details(result);
 }
