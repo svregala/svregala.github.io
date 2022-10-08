@@ -467,18 +467,14 @@ function business_details(details){
    ninth_row.append(image_table);
 
    var image_row=image_table.insertRow(0);
-   var img_cell = image_row.insertCell(0);
-   img_cell.className='yelp_images';
-   console.log('first url',detail_dict['url'][0]);
-   img_cell.innerHTML='<div><img class="crop_yelp_images" src=' + detail_dict['url'][0] + '></div><div class="photo_caption">Photo ' + 1 + '</div></td>';
-
+   
    var count=0;
-   /*for(var i=0; i<detail_dict['photos'].length; i++){
+   for(var i=0; i<detail_dict['photos'].length; i++){
       var num=i+1;
       var img_cell = image_row.insertCell(i);
       img_cell.className='yelp_images';
-      img_cell.innerHTML='<div><img class="crop_yelp_images" src=' + detail_dict['url'][i] + '></div><div class="photo_caption">Photo ' + num + '</div></td>';
-   }*/
+      img_cell.innerHTML='<div><img class="crop_yelp_images" src=' + detail_dict['photos'][i] + '></div><div class="photo_caption">Photo ' + num + '</div></td>';
+   }
 
    document.getElementById('more_detail').scrollIntoView();
 }
