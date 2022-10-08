@@ -277,7 +277,7 @@
    text-align: center;
    font-size: 1.3em;
    font-weight: bold;
-   border: 15px solid lightgray;
+   /*border: 15px solid lightgray;*/
 }
 
 .display_blue_line{
@@ -292,10 +292,12 @@
    width:100%;
    table-layout: fixed;
    background-color: white;
+   border: 15px solid lightgray;
 }
 
 .display_title{
    text-align: center;
+   padding-top:20px;
 }
 
 .inside_table{

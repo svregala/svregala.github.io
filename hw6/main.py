@@ -55,15 +55,8 @@ def get_details():
    res_details = requests.get(detail_url, headers=headers_key)
    details_json = res_details.json()
    details_string = json.dumps(details_json)
-   details_load = json.loads(details_string)
 
-   details_dict = {'status':details_load['hours'][0]["is_open_now"],'photos':details_load['photos'],
-                  'address':details_load['location'],'transact_support':details_load['transactions'],
-                  'category':details_load['categories'],'phone':details_load['display_phone'],
-                  'price':details_load['price'], 'url':details_load['url']}
-   details_return = json.dumps(details_dict)
-
-   return details_return
+   return details_string
 
 
 if __name__ == '__main__':
