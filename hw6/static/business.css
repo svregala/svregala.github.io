@@ -397,7 +397,9 @@
    padding-top: 0.4em;
    position:absolute;
    bottom:0;
-   right: 40%;
+   right: 33%;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .separate_pictures{
