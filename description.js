@@ -65,4 +65,4 @@ const project3 = {
 }
 
 
-const experience = "Test"
+const experience = "Testing"
