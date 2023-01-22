@@ -1,5 +1,84 @@
-.name {
+.overall{
+   border: 5px solid pink;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 30px;
+   margin-top: 40px;
+   width: 75%;
 }
+
+.name{
+   font-family: Georgia, sans-serif;
+   font-weight: 300px;
+   font-size: 80px;
+   color: lightgreen;
+   text-align: center;
+   margin-top: 25px;
+   position:static;
+}
+
+.pic_holder{
+   width: 100%;
+   position:static;
+}
+
+.pic{
+   display: block;
+   width: 100%;
+   border-radius: 1em;
+}
+
+.socials{
+   margin-top: 15px;
+   text-align: center;
+   font-size: 18px;
+   color:white;
+   font-family: Georgia, sans-serif;
+}
+
+a:link{
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:active{
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:visited{
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.nav_bar_wrap{
+   border: 2px solid red;
+   color: white;
+   text-align: left;
+   margin-top: 30px;
+   font-family: Georgia, sans-serif;
+   font-size: 18px;
+}
+
+.nav_bar{
+   border: 2px solid green;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100px;
+}
+
+.text_display{
+   color: white;
+   font-family: Georgia, sans-serif;
+}
+
+/*
+position: fixed;
+*/

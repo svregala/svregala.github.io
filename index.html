@@ -5,14 +5,48 @@
       <title>Steve Regala Portfolio Website</title>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="style.css">
-      <link rel="icon" href="logo.jpeg">
+      <link rel="icon" href="./logo.jpeg">
    </head>
 
-   <body>
+   <body style="background-color: black;">
 
-      <h1 class="name">Steve Regala</h1>
-      <p>Edits have been made.</p>
+      <table class="overall">
+         <tr>
+            <td style="width:30%">
+               <div class="pic_holder">
+                  <img class="pic" src="./self.jpg">
+               </div>
+            </td>
 
+            <td>
+               <div class="name">Steve Regala</div>
+               <div class="socials">
+                  <a href="https://github.com/svregala?tab=repositories" target="_blank">Github</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <a href="https://www.linkedin.com/in/steve-regala-7991aa146/" target="_blank">LinkedIn</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <a href="mailto:svregala@gmail.com">Email</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+               </div>
+            </td>
+         </tr>
+
+         <tr>
+            <td style="width:30%">
+               <div class="nav_bar_wrap">
+                  <div class="nav_bar">
+                     <br>
+                     <a href="#" onclick="change_text()">About Me</a> <br><br>
+                     <a href="#">Education</a> <br><br>
+                     <a href="#">Project</a> <br><br>
+                     <a href="#">Experience</a> <br><br>
+                  </div>
+               </div>
+            </td>
+
+            <td>
+               <div class="text_display" id="our_text">Example text</div>
+            </td>
+         </tr>
+
+      </table>
 
       <script src="business.js"></script>
    </body>
