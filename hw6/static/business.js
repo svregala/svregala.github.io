@@ -28,7 +28,7 @@ CITATION: For the functions auto_location() & input_location(), the following we
 to invoke IPInfo API and Google Geocoding API: https://dmitripavlutin.com/javascript-fetch-async-await/.
 Lines 32-48.
  */
-/* IPInfo for auto detection for location - AUTO DETECTION */
+/* IPInfo for auto detection for location - AUTO DETECTION*/
 async function auto_location(){
    var token_url = "https://ipinfo.io/json?token=1bb416f5a67c3e";
    var obj;
@@ -41,7 +41,7 @@ async function auto_location(){
 
 /* Google API for location info - INPUT FROM USER */
 async function input_location(){
-   var google_map_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + document.getElementById('location').value + "&key=AIzaSyBTLfiP5LAhW1bBZDAQaJiu-A1UfRUu7P4";
+   var google_map_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + document.getElementById('location').value + "&key=THIS KEY IS HIDDEN";
    var obj;
    try{
       const res = await fetch(google_map_url)
@@ -475,6 +475,5 @@ function business_details(details){
       img_cell.className='yelp_images';
       img_cell.innerHTML='<div><img class="crop_yelp_images" src=' + detail_dict['photos'][i] + '></div><div class="photo_caption">Photo ' + num + '</div></td>';
    }
-
    document.getElementById('more_detail').scrollIntoView();
 }

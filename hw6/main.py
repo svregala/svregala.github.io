@@ -9,7 +9,7 @@ import json
 # CITATION for line 10: https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask 
 app = Flask(__name__, static_url_path='')
 
-YELP_API_KEY = "goP5OwxHhWstZj6srqwEvGaaNDp4S8O5v91HCwpuvh8rv_c_xm7m-quBNK_4cz-ck_Poui16PLnf-MjxdZK9KUHD6ZoHeqr0EcyODA8khRr7MI1q2rn617GmvD82Y3Yx"
+YELP_API_KEY = "THIS KEY IS HIDDEN"
 headers_key = {'Authorization': 'Bearer %s' %YELP_API_KEY}
 yelp_API_url = 'https://api.yelp.com/v3/businesses/search'
 yelp_API_url_DETAILS = 'https://api.yelp.com/v3/businesses/'
