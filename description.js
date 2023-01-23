@@ -1,22 +1,23 @@
-const about = "Hi! My name is Steve. " 
-   + "I'm currently a graduate student at the University of Southern California (USC) studying computer science. " 
-   + "I'm on my last year and last semester set to graduate in May 2023 with a Master of Science degree in computer science. "
-   + "For undergrad, I attended the University of California, Santa Barbara (UCSB) " 
-   + "and graduated with a Bachelor of Science degree in applied mathematics and a minor in statistical science. "
-   + "I enjoy the process of building software applications, and learning and applying new technologies; "
-   + "with no specified interest just yet, I'm very open to exploring and working in different parts of the software development industry"
-   + "In my free time, I like to hang out with my family and friends; we play basketball, explore new places, and eat good food."
+const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks for visiting the site!\n\n"
+   + "<b style= 'color: rgb(78, 175, 78);'>I'm</b> currently a graduate student at the University of Southern California (USC) studying computer science. " 
+   + "<b style= 'color: rgb(78, 175, 78);'>I'm</b> on my last year and last semester, set to graduate in May 2023 with a Master of Science (MS) degree in computer science. "
+   + "<b style= 'color: rgb(78, 175, 78);'>For</b> undergrad, I attended the University of California, Santa Barbara (UCSB) " 
+   + "and graduated with a Bachelor of Science (BS) degree in applied mathematics and a minor in statistical science. "
+   + "<b style= 'color: rgb(78, 175, 78);'>I</b> enjoy learning and applying new technologies, and thus enjoy the process of building sofware applications; "
+   + "with no specified interest just yet, I'm very open to exploring and working in different parts of the software engineering/development industry. "
+   + "<b style= 'color: rgb(78, 175, 78);'>In</b> my free time, I like to hang out with my family and friends; we play basketball and videogames, explore new places, and eat good food together. "
+   + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics; more specifically, the purpose of life and our time here on Earth."
 
 
 const educationGrad = {
    "school" : "University of Southern California (USC)",
-   "degree" : "Master of Science in Computer Science",
+   "degree" : "Master of Science (MS) in Computer Science",
    "graduation" : "May 2023"
 }
 
 const educationUndergrad = {
    "school" : "University of California, Santa Barbara (UCSB)",
-   "degree" : "Bachelor of Science in Applied Mathematics; minor in Statistical Science",
+   "degree" : "Bachelor of Science (BS) in Applied Mathematics; minor in Statistical Science",
    "graduation" : "June 2021"
 }
 
@@ -66,3 +67,5 @@ const project3 = {
 
 
 const experience = "Testing"
+
+export {about, education};

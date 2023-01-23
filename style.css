@@ -1,3 +1,127 @@
+.over{
+   /*border: 1px solid pink;*/
+   margin-left: 13%;
+   margin-right: auto;
+   margin-top: 75px;
+   width: 75%;
+   position:fixed;
+}
+
+.picture{
+   width: 35%;
+   position:static;
+   float:left;
+}
+
+.holder{
+   width:65%;
+   float: left;
+}
+
+.name{
+   font-family: Georgia, sans-serif;
+   font-weight: 300px;
+   font-size: 80px;
+   color: rgb(78, 175, 78);
+   text-align: center;
+   margin-top: 60px;
+}
+
+.socials{
+   margin-top: 20px;
+   text-align: center;
+   font-size: 18px;
+   color: rgb(200, 198, 198);
+   font-family: Georgia, sans-serif;
+}
+
+.nav{
+   /*border: 1px solid green;*/
+   font-family: Georgia, sans-serif;
+   position: fixed;
+   color: rgb(200, 198, 198);
+   font-size: 23px;
+   margin-top: 410px;
+   margin-left: 13%;
+   overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.content_container{
+   /*border: 1px solid green;*/
+   position: fixed;
+   margin-left: 36%;
+   width: 48%;
+   height: 45%;
+   margin-top: 410px;
+}
+
+.content{
+   /*border: 1px solid blue;*/
+   font-family: Georgia, sans-serif;
+   position: static;
+   color: rgb(200, 198, 198);
+   font-size: 20px;
+   height:95%;
+   overflow:scroll;
+   line-height: 1.5;
+   white-space: pre-wrap;
+}
+
+.socials a:link{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.socials a:active{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.socials a:visited{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.socials a:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+
+.nav a:link{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.nav a:focus{
+   color: rgb(200, 198, 198);
+   background-color: green;
+   text-decoration: underline;
+}
+
+.nav a:visited{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.nav a:hover{
+   color: rgb(200, 198, 198);
+   background-color: green;
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*---------------------------------*/
 .overall{
    border: 5px solid pink;
    margin-left: auto;
@@ -6,15 +130,7 @@
    width: 75%;
 }
 
-.name{
-   font-family: Georgia, sans-serif;
-   font-weight: 300px;
-   font-size: 80px;
-   color: lightgreen;
-   text-align: center;
-   margin-top: 25px;
-   position:static;
-}
+
 
 .pic_holder{
    width: 100%;
@@ -27,36 +143,7 @@
    border-radius: 1em;
 }
 
-.socials{
-   margin-top: 15px;
-   text-align: center;
-   font-size: 18px;
-   color:white;
-   font-family: Georgia, sans-serif;
-}
 
-a:link{
-   color: white;
-   background-color: transparent;
-   text-decoration: none;
-}
-
-a:active{
-   color: white;
-   background-color: transparent;
-   text-decoration: none;
-}
-
-a:visited{
-   color: white;
-   background-color: transparent;
-   text-decoration: none;
-}
-
-a:hover{
-   text-decoration: underline;
-   cursor: pointer;
-}
 
 .nav_bar_wrap{
    border: 2px solid red;
@@ -74,11 +161,9 @@ a:hover{
    width: 100px;
 }
 
-.text_display{
+.text_disp_wrap{
+   margin-top: -72px;
+   border: 2px solid pink;
    color: white;
    font-family: Georgia, sans-serif;
 }
-
-/*
-position: fixed;
-*/
