@@ -49,8 +49,11 @@ const project1 = {
 
 const project2 = {
    "project name" : "Artificial Intelligence (AI) Projects",
-   "project description" : "Overall, I built a fully responsive web application to search for thousands of " 
-      + "businesses with the Yelp API using Angular, HTML, CSS, TypeScript, RxJS, and Bootstrap on the client side. ",
+   "project description" : "Overall, I completed 3 projects that exhibited AI techniques like "
+      + "search optimization, game playing, reinforcement learning, and neural networks. "
+      + "First, I applied the Genetic Algorithm to a 3D Travelling-Salesman Problem using Java to find the optimal path given a list of 3D coordinates. "
+      + "Second, I developed an AI agent based on the minimax algorithm with Alpha-Beta pruning using Python to play Go-5x5 (Little-Go); I successfully outperformed the random, greedy, aggressive, alpha-beta, and Q-learner agents constructed by the course producers. "
+      + "Lastly, I implemented a multi-layer perceptron (MLP) neural network from scratch (without the use of machine learning libraries and external libraries other than NumPy) using Python, and used it to classify from four different datasets: Spiral, Circle, XOR, Gaussian. I was able to achieve 94%+ accuracy on each of the sample datasets provided in course grading.",
    "project github genetic" : "https://github.com/svregala/Genetic-Algorithm-on-Travelling-Salesman-Problem-TSP",
    "project github minmax" : "https://github.com/svregala/Minimax-Algorithm-with-Alpha-Beta-Pruning-to-play-Go-5x5",
    "project github MLP" : "https://github.com/svregala/Multi-Layer-Perceptron-MLP-Neural-Network-from-Scratch"
@@ -58,14 +61,39 @@ const project2 = {
 
 const project3 = {
    "project name" : "Socket Programming",
-   "project description" : "Overall, I built a fully responsive web application to search for thousands of " 
-      + "businesses with the Yelp API using Angular, HTML, CSS, TypeScript, RxJS, and Bootstrap on the client side. ",
-   "project github genetic" : "https://github.com/svregala/Genetic-Algorithm-on-Travelling-Salesman-Problem-TSP",
-   "project github minmax" : "https://github.com/svregala/Minimax-Algorithm-with-Alpha-Beta-Pruning-to-play-Go-5x5",
-   "project github MLP" : "https://github.com/svregala/Multi-Layer-Perceptron-MLP-Neural-Network-from-Scratch"
+   "project description" : "Using C++, I created a simplified version of a blockchain service called Txchain, where a client issues a request for finding their current balance in their account, transfers coins to another client, and provides a file statement with all transactions in order. "
+      + "Additionally, I programmed all corresponding servers; the client and monitor servers send requests to a central server which in turn interacts with three other backend servers for pulling information and data processing.",
+   "project github socket" : "https://github.com/svregala/Socket-Programming-EE450-Final-Project"
 }
 
+const project4 = {
+   "project name" : "Weenix Kernel Implementation",
+   "project description" : "Using C, I developed code for the building blocks (threads and processes) of the Weenix operating system, which runs concurrently in kernel mode. "
+      + "I also coded a virtual file system as it provides a common interface between the operating system kernel and the various file systems. "
+      + "Lastly, I implemented the virtual memory so that the kernel can manage user address spaces, run user-level code, and service system calls.",
+   "project github weenix" : "https://github.com/svregala/Weenix-Kernel-Implementation"
+}
 
-const experience = "Testing"
+const project = [project1, project2, project3, project4]
 
-export {about, education};
+const exp1 = {
+   "company" : "Juni Learning",
+   "role" : "Python Programming Instructor",
+   "location" : "San Francisco, CA (Remote)",
+   "duration" : "June 2021-Present",
+   "desc" : "My main role is to educate and engage students to learn foundational concepts of Python programming in a challenging course. "
+      + "I also develop a class schedule and administer homework assignments for students to follow to succeed in class."
+}
+
+const exp2 = {
+   "company" : "Self-Employed Math Tutor",
+   "role" : "Advanced Placement Calculus BC Student Tutor",
+   "location" : "Sunnyvale, CA",
+   "duration" : "June 2018–July 2018",
+   "desc" : "My main role was to tutor a high school junior to prepare for a Calculus BC class and Advanced Placement Test. "
+      + "I also set up a teaching curriculum that followed closely with the high school class curriculum, which ensured effective and comprehensive preparation."
+}
+
+const experience = [exp1, exp2]
+
+export {about, education, project, experience};

@@ -2,15 +2,21 @@
    /*border: 1px solid pink;*/
    margin-left: 13%;
    margin-right: auto;
-   margin-top: 75px;
+   margin-top: 65px;
    width: 75%;
    position:fixed;
 }
 
 .picture{
-   width: 35%;
+   width: 32%;
    position:static;
    float:left;
+}
+
+.pic{
+   display: block;
+   width: 100%;
+   border-radius: 1em;
 }
 
 .holder{
@@ -41,7 +47,7 @@
    position: fixed;
    color: rgb(200, 198, 198);
    font-size: 23px;
-   margin-top: 410px;
+   margin-top: 360px;
    margin-left: 13%;
    overflow-x: hidden; /* Disable horizontal scroll */
 }
@@ -50,9 +56,9 @@
    /*border: 1px solid green;*/
    position: fixed;
    margin-left: 36%;
-   width: 48%;
-   height: 45%;
-   margin-top: 410px;
+   width: 50%;
+   height: 50%;
+   margin-top: 360px;
 }
 
 .content{
@@ -115,55 +121,38 @@
    text-decoration: underline;
 }
 
+.disp_text a:link{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
 
+.disp_text a:active{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
 
+.disp_text a:visited{
+   color: rgb(200, 198, 198);
+   background-color: transparent;
+   text-decoration: none;
+}
 
+.disp_text a:hover{
+   color: rgb(200, 198, 198);
+   background-color: green;
+   text-decoration: none;
+}
 
-
+#upd{
+   color: gray;
+   font-size: 12px;
+   font-family: Georgia, sans-serif;
+   position:absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
 
 /*---------------------------------*/
-.overall{
-   border: 5px solid pink;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 40px;
-   width: 75%;
-}
-
-
-
-.pic_holder{
-   width: 100%;
-   position:static;
-}
-
-.pic{
-   display: block;
-   width: 100%;
-   border-radius: 1em;
-}
-
-
-
-.nav_bar_wrap{
-   border: 2px solid red;
-   color: white;
-   text-align: left;
-   margin-top: 30px;
-   font-family: Georgia, sans-serif;
-   font-size: 18px;
-}
-
-.nav_bar{
-   border: 2px solid green;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100px;
-}
-
-.text_disp_wrap{
-   margin-top: -72px;
-   border: 2px solid pink;
-   color: white;
-   font-family: Georgia, sans-serif;
-}
