@@ -1,12 +1,12 @@
 const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks for visiting the site!\n\n"
    + "<b style= 'color: rgb(78, 175, 78);'>I'm</b> currently a graduate student at the University of Southern California (USC) studying computer science. " 
-   + "<b style= 'color: rgb(78, 175, 78);'>I'm</b> on my last year and last semester, set to graduate in May 2023 with a Master of Science (MS) degree in computer science. "
+   + "<b style= 'color: rgb(78, 175, 78);'>I'm</b> on my last year and last semester, set to graduate in May 2023 with a Master of Science (MS) degree in Computer Science. "
    + "<b style= 'color: rgb(78, 175, 78);'>For</b> undergrad, I attended the University of California, Santa Barbara (UCSB) " 
-   + "and graduated with a Bachelor of Science (BS) degree in applied mathematics and a minor in statistical science. "
+   + "and graduated with a Bachelor of Science (BS) degree in Applied Mathematics and a minor in Statistical Science. "
    + "<b style= 'color: rgb(78, 175, 78);'>I</b> enjoy learning and applying new technologies, and thus enjoy the process of building sofware applications; "
    + "with no specified interest just yet, I'm very open to exploring and working in different parts of the software engineering/development industry. "
    + "<b style= 'color: rgb(78, 175, 78);'>In</b> my free time, I like to hang out with my family and friends; we play basketball and videogames, explore new places, and eat good food together. "
-   + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics; more specifically, the purpose of life and our time here on Earth."
+   + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics, more specifically, the purpose of life and our time here on Earth."
 
 
 const educationGrad = {
@@ -62,6 +62,7 @@ const project2 = {
 const project3 = {
    "project name" : "Socket Programming",
    "project description" : "Using C++, I created a simplified version of a blockchain service called Txchain, where a client issues a request for finding their current balance in their account, transfers coins to another client, and provides a file statement with all transactions in order. "
+      + "To implement communication channels, I utilized TCP and UDP messaging protocols. "
       + "Additionally, I programmed all corresponding servers; the client and monitor servers send requests to a central server which in turn interacts with three other backend servers for pulling information and data processing.",
    "project github socket" : "https://github.com/svregala/Socket-Programming-EE450-Final-Project"
 }
