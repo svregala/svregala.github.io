@@ -61,9 +61,9 @@ const project2 = {
 
 const project3 = {
    "project name" : "Socket Programming",
-   "project description" : "Using C++, I created a simplified version of a blockchain service called Txchain, where a client issues a request for finding their current balance in their account, transfers coins to another client, and provides a file statement with all transactions in order. "
+   "project description" : "Using C++, I created a simplified version of a blockchain service called Txchain, where a client issues a request for finding their current balance in their account, transfers coins to another client, and provides a file statement with all transactions in order across multiple servers. "
       + "To implement communication channels, I utilized TCP and UDP messaging protocols. "
-      + "Additionally, I programmed all corresponding servers; the client and monitor servers send requests to a central server which in turn interacts with three other backend servers for pulling information and data processing.",
+      + "Additionally, I programmed all corresponding servers; the client and monitor servers send requests to a central server which in turn interacts with three other backend servers for real time updates, pulling information, and data processing.",
    "project github socket" : "https://github.com/svregala/Socket-Programming-EE450-Final-Project"
 }
 
