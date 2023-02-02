@@ -10,13 +10,13 @@ const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks fo
 
 
 const educationGrad = {
-   "school" : "University of Southern California (USC)",
+   "school" : "University of Southern California (USC), Viterbi School of Engineering",
    "degree" : "Master of Science (MS) in Computer Science",
    "graduation" : "May 2023"
 }
 
 const educationUndergrad = {
-   "school" : "University of California, Santa Barbara (UCSB)",
+   "school" : "University of California, Santa Barbara (UCSB), College of Letters and Sciences",
    "degree" : "Bachelor of Science (BS) in Applied Mathematics; minor in Statistical Science",
    "graduation" : "June 2021"
 }
