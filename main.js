@@ -50,7 +50,7 @@ document.getElementById("projects").onclick = function() {
    + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[4]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[4]["project description"]
-   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Fin-Friends HackSC</b></u>: <a href=\'" + project[1]["project github HackSC"] + "\' target=_blank>Click Me - Github Fin-Friends!</a>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Fin-Friends HackSC</b></u>: <a href=\'" + project[4]["project github HackSC"] + "\' target=_blank>Click Me - Github Fin-Friends!</a>"
    + "<br><br>"
    + "<hr>"
    + "<br>"
