@@ -29,7 +29,13 @@ document.getElementById("education").onclick = function() {
 
 document.getElementById("projects").onclick = function() {
    document.getElementById('disp_text').innerHTML =
-   "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[0]["project name"]
+   "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[5]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[5]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Genetic Algorithm</b></u>: <a href=\'" + project[5]["project github video"] + "\' target=_blank>Click Me - Github Video Index!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[0]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[0]["project description"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Website</b></u>: <a href=\'" + project[0]["Web link"] + "\' target=_blank>Click Me!</a>"
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - iOS</b></u>: <a href=\'" + project[0]["project github iOS"] + "\' target=_blank>Click Me - iOS!</a>"

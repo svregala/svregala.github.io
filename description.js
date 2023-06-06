@@ -35,7 +35,7 @@ const project1 = {
       + "The application is deployed and managed on Google Cloud Platform (GCP). "
       + "The backend application is written in Node.js on the server side with the Express framework. "
       + "The application consists of features such as navigation bar, autocomplete, routing, search form, results table, business details card, and reservation form. "
-      + "Regarding the iOS application, I utilized Swift and SwiftUI framework on XCode to build a native iOS application that allows users to perform a business search; "
+      + "To further develop my skills, I expanded the web application to a native iOS application. I utilized Swift and SwiftUI framework on XCode to build a native iOS application that allows users to perform a business search; "
       + "with the help of the Yelp API, it provides users coherent results and informative details about the specified businesses. "
       + "Morever, I practiced the Model-View-ViewModel (MVVM) design pattern and applied third-party libraries through Swift Package Manager such as Alamofire, Kingfisher, and SwiftyJSON.",
    "Web link" : "https://csci-homework-8.wl.r.appspot.com/",
@@ -82,7 +82,16 @@ const project5 = {
    "project github HackSC" : "https://github.com/svregala/HackSC_Project"
 }
 
-const project = [project1, project2, project3, project4, project5]
+const project6 = {
+   "project name" : "Video Index Creation with Interactive Player",
+   "project description" : "In this project, I led a team of 4 to complete a project focused on developing an automated solution for creating a logical index for video content with audio. "
+      + "To determine the scene/shot/subshot changes, we mainly utilized the open CV (computer vision) library, more specifically, determining frame differences with histogram comparison using a combination of Chi-Square and Bhattacharyya coefficients. "
+      + "My team and I also designed and implemented a user-friendly interactive player setup that allowed seamless browsing and exploration of the video content based on the extracted index, while ensuring synchronization between audio and video playback. "
+      + "For our interactive player, we mainly used the tkinter, pygame, and PIL libraries. ",
+   "project github video" : "https://github.com/svregala/Video_Index_Creation_with_Interactive_Player"
+}
+
+const project = [project1, project2, project3, project4, project5, project6]
 
 const exp1 = {
    "company" : "Juni Learning",
