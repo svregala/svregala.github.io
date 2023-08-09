@@ -84,7 +84,7 @@ const project5 = {
 
 const project6 = {
    "project name" : "Video Index Creation with Interactive Player",
-   "project description" : "In this project, I led a team of 4 to complete a project focused on developing an automated solution for creating a logical index for video content with audio. "
+   "project description" : "In this project, I led a team of 4 to complete a project focused on developing an automated solution for creating a logical index (table of contents) for video content with audio. "
       + "To determine the scene/shot/subshot changes, we mainly utilized the OpenCV (computer vision) library, more specifically, determining frame differences with histogram comparison using a combination of Chi-Square and Bhattacharyya coefficients. "
       + "My team and I also designed and implemented a user-friendly interactive player setup that allowed seamless browsing and exploration of the video content based on the extracted index, while ensuring synchronization between audio and video playback. "
       + "For our interactive player, we mainly used the Tkinter, Pygame, and PIL libraries. ",
