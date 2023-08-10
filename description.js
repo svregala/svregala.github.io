@@ -52,7 +52,7 @@ const project2 = {
       + "search optimization, game playing, reinforcement learning, and neural networks. "
       + "First, I applied the Genetic Algorithm to a 3D Travelling-Salesman Problem using Java to find the optimal path given a list of 3D coordinates. "
       + "Second, I developed an AI agent based on the Minimax algorithm with Alpha-Beta pruning using Python to play Go-5x5 (Little-Go); I successfully outperformed the random, greedy, aggressive, alpha-beta, and Q-learner agents constructed by the course producers. "
-      + "Lastly, I implemented a multi-layer perceptron (MLP) neural network from scratch (without the use of machine learning libraries and external libraries other than NumPy) using Python, and used it to classify from four different datasets: Spiral, Circle, XOR, Gaussian. I was able to achieve 94%+ accuracy on each of the sample datasets provided in course grading.",
+      + "Lastly, I implemented a multi-layer perceptron (MLP) neural network from scratch (without the use of machine learning libraries and external libraries other than NumPy) using Python, and used it to classify from four different datasets: Spiral, Circle, XOR, Gaussian. I achieved 94%+ accuracy on each of the sample datasets provided in course grading.",
    "project github genetic" : "https://github.com/svregala/Genetic-Algorithm-on-Travelling-Salesman-Problem-TSP",
    "project github minmax" : "https://github.com/svregala/Minimax-Algorithm-with-Alpha-Beta-Pruning-to-play-Go-5x5",
    "project github MLP" : "https://github.com/svregala/Multi-Layer-Perceptron-MLP-Neural-Network-from-Scratch"
@@ -68,7 +68,7 @@ const project3 = {
 
 const project4 = {
    "project name" : "Weenix Kernel Implementation",
-   "project description" : "Using C, developed code to establish the fundamental components (threads and processes) of the Weenix operating system, allowing the kernel to run several threads and processes concurrently in kernel mode. "
+   "project description" : "Using C, I developed code to establish the fundamental components (threads and processes) of the Weenix operating system, allowing the kernel to run several threads and processes concurrently in kernel mode. "
       + "I also engineered a virtual file system to provide a common interface between the operating system kernel and the various file systems. "
       + "Lastly, I implemented the virtual memory so that the kernel can manage user address spaces, run user-level code, and service system calls.",
    "project github weenix" : "https://github.com/svregala/Weenix-Kernel-Implementation"
