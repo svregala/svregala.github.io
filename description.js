@@ -11,19 +11,22 @@ const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks fo
 const educationGrad = {
    "school" : "University of Southern California (USC), Viterbi School of Engineering",
    "degree" : "Master of Science (MS) in Computer Science",
-   "graduation" : "May 2023"
+   "graduation" : "May 2023",
+   "coursework" : "Programming Systems Design–Java, Database Systems, Operating Systems, Computer Networks, Analysis of Algorithms, Web Technologies, Foundations of Artificial Intelligence, Information Retrieval and Web Search Engines, Multimedia Systems Design"
 }
 
 const educationUndergrad = {
    "school" : "University of California, Santa Barbara (UCSB), College of Letters and Sciences",
    "degree" : "Bachelor of Science (BS) in Applied Mathematics; minor in Statistical Science",
-   "graduation" : "June 2021"
+   "graduation" : "June 2021",
+   "coursework" : "Advanced Linear Algebra, Numerical Analysis, Statistical Machine Learning, Probability & Statistics, Regression Analysis, Multivariable Vector Calculus with Applications, Ordinary Differential Equations, Matrix Analysis, Complex Variable Analysis, Physics"
 }
 
 const educationHS = {
    "school" : "Homestead High School",
    "degree" : "Not Applicable",
-   "graduation" : "August 2017"
+   "graduation" : "August 2017",
+   "coursework" : "Not Applicable"
 }
 
 const education = [educationGrad, educationUndergrad, educationHS]

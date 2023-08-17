@@ -13,18 +13,21 @@ document.getElementById("education").onclick = function() {
         "<u><b style= 'color: rgb(78, 175, 78);'>Graduate School</b></u>: " + education[0]["school"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Degree</b></u>: " + education[0]["degree"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Graduation</b></u>: " + education[0]["graduation"]
+      + "\n<u><b style= 'color: rgb(78, 175, 78);'>Relevant Coursework</b></u>: " + education[0]["coursework"]
       + "<br><br>"
       + "<hr>"
       + "<br>"
       + "<u><b style= 'color: rgb(78, 175, 78);'>Undergraduate School</b></u>: " + education[1]["school"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Degree</b></u>: " + education[1]["degree"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Graduation</b></u>: " + education[1]["graduation"]
+      + "\n<u><b style= 'color: rgb(78, 175, 78);'>Relevant Coursework</b></u>: " + education[1]["coursework"]
       + "<br><br>"
       + "<hr>"
       + "<br>"
       + "<u><b style= 'color: rgb(78, 175, 78);'>Highschool</b></u>: " + education[2]["school"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Degree</b></u>: " + education[2]["degree"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Graduation</b></u>: " + education[2]["graduation"]
+      + "\n<u><b style= 'color: rgb(78, 175, 78);'>Relevant Coursework</b></u>: " + education[2]["coursework"]
 }
 
 document.getElementById("projects").onclick = function() {
