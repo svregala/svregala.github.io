@@ -33,9 +33,9 @@ document.getElementById("education").onclick = function() {
 document.getElementById("skills").onclick = function() {
    document.getElementById('disp_text').innerHTML = 
         "<u><b style= 'color: rgb(78, 175, 78);'>Programming & Web</b></u>: " + skills[0]
-      + "<br><br>"
+      + "<br>"
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Tools & Frameworks</b></u>: " + skills[1]
-      + "<br><br>"
+      + "<br>"
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Language</b></u>: " + skills[2]
 }
 
