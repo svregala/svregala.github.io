@@ -1,4 +1,4 @@
-import {about, education, project, experience} from "./description.js"
+import {about, education, skills, project, experience} from "./description.js"
 
 window.onload = function display_aboutMe() {
    document.getElementById('disp_text').innerHTML = about
@@ -28,6 +28,13 @@ document.getElementById("education").onclick = function() {
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Degree</b></u>: " + education[2]["degree"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Graduation</b></u>: " + education[2]["graduation"]
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Relevant Coursework</b></u>: " + education[2]["coursework"]
+}
+
+document.getElementById("skills").onclick = function() {
+   document.getElementById('disp_text').innerHTML = 
+        "<u><b style= 'color: rgb(78, 175, 78);'>Programming & Web</b></u>: " + skills[0]
+      + "\n<u><b style= 'color: rgb(78, 175, 78);'>Tools & Frameworks</b></u>: " + skills[1]
+      + "\n<u><b style= 'color: rgb(78, 175, 78);'>Language</b></u>: " + skills[2]
 }
 
 document.getElementById("projects").onclick = function() {

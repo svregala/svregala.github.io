@@ -31,6 +31,12 @@ const educationHS = {
 
 const education = [educationGrad, educationUndergrad, educationHS]
 
+const program_web = "Java, JavaScript, Python, Swift, C, C++, HTML, CSS, Rest API, JSON, XML, Node.js"
+const tools_frameworks = "SwiftUI, Angular, Bootstrap, Flask, Express, Google Cloud Platform (GCP), PostgreSQL, MongoDB, RDBMS, Unix/Linux, Git, Postman, VScode, Xcode, IntelliJ, Eclipse, Sublime Text, LaTeX"
+const language = "Tagalog (Conversational), Spanish (Conversational)"
+
+const skills = [program_web, tools_frameworks, language]
+
 const project1 = {
    "project name" : "Yelp Business Search, Responsive Web and Mobile Application & iOS App Development",
    "project description" : "Overall, I built a fully responsive web application to search for thousands of " 
@@ -115,4 +121,4 @@ const exp2 = {
 
 const experience = [exp1, exp2]
 
-export {about, education, project, experience};
+export {about, education, skills, project, experience};
