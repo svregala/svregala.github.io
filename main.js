@@ -102,4 +102,28 @@ document.getElementById("experience").onclick = function(){
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Location</b></u>: " + experience[1]["location"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Duration</b></u>: " + experience[1]["duration"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + experience[1]["desc"]
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Company</b></u>: " + experience[2]["company"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Role</b></u>: " + experience[2]["role"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Location</b></u>: " + experience[2]["location"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Duration</b></u>: " + experience[2]["duration"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + experience[2]["desc"]
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Company</b></u>: " + experience[3]["company"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Role</b></u>: " + experience[3]["role"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Location</b></u>: " + experience[3]["location"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Duration</b></u>: " + experience[3]["duration"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + experience[3]["desc"]
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Company</b></u>: " + experience[4]["company"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Role</b></u>: " + experience[4]["role"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Location</b></u>: " + experience[4]["location"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Duration</b></u>: " + experience[4]["duration"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + experience[4]["desc"]
 }

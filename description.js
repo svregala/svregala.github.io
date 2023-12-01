@@ -103,22 +103,48 @@ const project = [project1, project2, project3, project4, project5, project6]
 
 const exp1 = {
    "company" : "Juni Learning",
-   "role" : "Python Programming Instructor",
+   "role" : "Coding Instructor (Java & Python)",
    "location" : "San Francisco, CA (Remote)",
    "duration" : "June 2021-Present",
-   "desc" : "My main role is to educate and engage students to learn foundational concepts of Python programming in a challenging course. "
+   "desc" : "My main role is to educate and engage students to learn foundational concepts of Java and Python in a challenging course. "
       + "I also develop a class schedule and administer homework assignments for students to follow to succeed in class."
 }
 
 const exp2 = {
    "company" : "Self-Employed Math Tutor",
-   "role" : "Advanced Placement Calculus BC Student Tutor",
+   "role" : "Mathematics Tutor for Algebra, Geometry, and Number Theory",
+   "location" : "Sunnyvale, CA",
+   "duration" : "July 2021–August 2021",
+   "desc" : "I tutored both a 3rd grade and a 5th grade student in advanced algebra, geometry, and number theory, following the curriculum from \"The Art of Problem Solving\" series. "
+      + "I ensured effective learning by administering homework assignments and constant practice problems with extensive discussions."
+}
+
+const exp3 = {
+   "company" : "Self-Employed Math Tutor",
+   "role" : "Advanced Placement (AP) Calculus BC Student Tutor",
    "location" : "Sunnyvale, CA",
    "duration" : "June 2018–July 2018",
    "desc" : "My main role was to tutor a high school junior to prepare for a Calculus BC class and Advanced Placement Test. "
       + "I also set up a teaching curriculum that followed closely with the high school class curriculum, which ensured effective and comprehensive preparation."
 }
 
-const experience = [exp1, exp2]
+const exp4 = {
+   "company" : "Chick-Fil-A",
+   "role" : "Food Service Team Member",
+   "location" : "Sunnyvale, CA",
+   "duration" : "April 2017–June 2018",
+   "desc" : "I handled transactions, worked with team of employees, and ensured overall customer satisfaction."
+}
+
+const exp5 = {
+   "company" : "University of California, Santa Barbara (UCSB)",
+   "role" : "California NanoSystems Institute Research Intern (Apprenticeship)",
+   "location" : "Santa Barbara, CA",
+   "duration" : "August 2017–August 2017",
+   "desc" : "With a groupm, I performed research on Generalizing Categorization of the brain with a team, and conducted tests on human subjects to stimulate their ability to implicitly and explicitly categorize images of objects."
+   + "We analyzed how the results of categorizing adaptability could be applied to computer vision."
+}
+
+const experience = [exp1, exp2, exp3, exp4, exp5]
 
 export {about, education, skills, project, experience};
