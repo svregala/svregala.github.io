@@ -129,7 +129,7 @@ const project10 = {
    "project name" : "Hash Table Implementation using Linked Lists",
    "project description" : "Using C++, I implemented a hash table using linked lists. This program can be tested using the command prompt in terminal or autonomously. "
       + "Check out the program by reading more in the link!",
-   "project github hash" : "https://github.com/svregala/https://github.com/svregala/Hash_Table_Implementation_using_Linked_Lists"
+   "project github hash" : "https://github.com/svregala/Hash_Table_Implementation_using_Linked_Lists"
 }
 
 const project11 = {
