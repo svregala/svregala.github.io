@@ -138,6 +138,24 @@ document.getElementById("projects").onclick = function() {
    + "<br><br>"
    + "<hr>"
    + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[15]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[15]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Search</b></u>: <a href=\'" + project[15]["project github search"] + "\' target=_blank>Click Me - Searchhh!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[16]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[16]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Book</b></u>: <a href=\'" + project[16]["project github book"] + "\' target=_blank>Click Me - Book!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[17]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[17]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Coin</b></u>: <a href=\'" + project[17]["project github coin"] + "\' target=_blank>Click Me - Coin!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Other</b></u>: <br><a href=\'https://github.com/svregala/Leetcode-Solutions\' target=_blank>Click Me - Leetcode Solutions!</a>"
 }
 

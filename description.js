@@ -162,7 +162,7 @@ const project14 = {
    "project name" : "Inverted Index Creation",
    "project description" : "In this project, we write code using Java to create a unigram index and a bigram index that is a part of a self-contained, complete, minimal MapReduce process; "
       + "it is code that indexes words from multiple text files (files exist in \"data\" folder), and outputs an inverted index that looks like what is shown in both unigram_index.txt and selected_bigram_index.txt. "
-      + "The input data in the data folder is already cleaned, e.g. \n and \r characters. However, \t character exists between the document ID and the document text (taken care of in the code in map method). In other words, the input files are in a key-value format where docID is the key, and the contents are the value; the key and value are separated by a tab. "
+      + "The input data in the data folder is already cleaned, e.g. newline (backslash n) and return (backslash r) characters. However, tab (backslash t) character exists between the document ID and the document text (taken care of in the code in map method). In other words, the input files are in a key-value format where docID is the key, and the contents are the value; the key and value are separated by a tab. "
       + "After running UnigramIndex.java and BigramIndex.java, unigram_index.txt and selected_bigram_index.txt are created respectively. "
       + "Read more about it by clicking the link!",
    "project github invert" : "https://github.com/svregala/Inverted_Index_Creation"
@@ -177,7 +177,32 @@ const project15 = {
    "project github sampling" : "https://github.com/svregala/Spatial_Temporal_Resampling_and_Aliasing"
 }
 
-const project = [project1, project2, project3, project4, project5, project6, project7, project8, project9, project10, project11, project12, project13, project14, project15]
+const project16 = {
+   "project name" : "Search Engine Comparison",
+   "project description" : "In this project, we compare the search results from Google with the results from DuckDuckGo specifically (or other search engines like Bing, Yahoo, and Ask, if edited). In particular, we: "
+      + "(1) Scrape the results from DuckDuck Go (SearchEngine.py), and "
+      + "(2) Determine the Pecent Overlap and Spearman Coefficient, compared against given Google results (CompareResults.py). "
+      + "More details about the project in the link below!",
+   "project github search" : "https://github.com/svregala/Search_Engine_Comparison"
+}
+
+const project17 = {
+   "project name" : "Bookshelf Keeper",
+   "project description" : "This is a program to interact with a bookshelf-keeper, that maintains a shelf of books in increasing order by height. The program enables users to perform a series of put and pick operations via a BookshelfKeeper object. "
+      + "The pick operation refers to a case where you need to pick a book from a given position (index), and the put operation refers to putting a book of given height on the shelf, such that the bookshelf remains sorted after completing any operation. "
+      + "The user input consists of the initial state of our bookshelf and a series of pick and put operations to perform; for each operation it will print out the contents of the updated bookshelf, the number of lower-level book-moving operations used, and the total number of lower-level operations used since the start of the program. "
+      + "Read more about it in the link below!",
+   "project github book" : "https://github.com/svregala/Bookshelf_Keeper"
+}
+
+const project18 = {
+   "project name" : "Coin Toss Simulation Visualization",
+   "project description" : "This is a program that provides a visualization of a coin toss simulation, more specifically tossing 2 separate coins counts as a trial. When the program is ran, the user will be asked to input a number representing how many trials should occur. "
+      + "Try out the project in the link below!",
+   "project github coin" : "https://github.com/svregala/Coin_Toss_Simulation_Visualization"
+}
+
+const project = [project1, project2, project3, project4, project5, project6, project7, project8, project9, project10, project11, project12, project13, project14, project15, project16, project17, project18]
 
 const exp1 = {
    "company" : "Juni Learning",
