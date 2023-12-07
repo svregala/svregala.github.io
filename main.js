@@ -74,7 +74,7 @@ document.getElementById("projects").onclick = function() {
    + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[2]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[2]["project description"]
-   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Socket Programming</b></u>: <a href=\'" + project[2]["project github socket"] + "\' target=_blank>Click Me - Github sock!</a>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Socket Programming</b></u>: <a href=\'" + project[2]["project github socket"] + "\' target=_blank>Click Me - Github Sock!</a>"
    + "<br><br>"
    + "<hr>"
    + "<br>"
@@ -86,19 +86,55 @@ document.getElementById("projects").onclick = function() {
    + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[6]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[6]["project description"]
-   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Bucket</b></u>: <a href=\'" + project[6]["project github bucket"] + "\' target=_blank>Click Me - Github Bucket</a>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Bucket</b></u>: <a href=\'" + project[6]["project github bucket"] + "\' target=_blank>Click Me - Github Bucket!</a>"
    + "<br><br>"
    + "<hr>"
    + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[7]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[7]["project description"]
-   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Bank</b></u>: <a href=\'" + project[7]["project github bank"] + "\' target=_blank>Click Me - Github Bank</a>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Bank</b></u>: <a href=\'" + project[7]["project github bank"] + "\' target=_blank>Click Me - Github Bank!</a>"
    + "<br><br>"
    + "<hr>"
    + "<br>"
    + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[8]["project name"]
    + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[8]["project description"]
-   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Crawl</b></u>: <a href=\'" + project[8]["project github crawl"] + "\' target=_blank>Click Me - Github Crawl</a>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Crawl</b></u>: <a href=\'" + project[8]["project github crawl"] + "\' target=_blank>Click Me - Github Crawl!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[9]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[9]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Hash</b></u>: <a href=\'" + project[9]["project github hash"] + "\' target=_blank>Click Me - Github Hash...Browns!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[10]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[10]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Scrabble</b></u>: <a href=\'" + project[10]["project github scrabble"] + "\' target=_blank>Click Me - Github Scrabble!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[11]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[11]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Mine</b></u>: <a href=\'" + project[11]["project github mine"] + "\' target=_blank>Click Me - Github Mineee Sweeperrr!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[12]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[12]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Compression</b></u>: <a href=\'" + project[12]["project github compression"] + "\' target=_blank>Click Me - Github Compression!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[13]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[13]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Inverted Index</b></u>: <a href=\'" + project[13]["project github invert"] + "\' target=_blank>Click Me - Github Invert!</a>"
+   + "<br><br>"
+   + "<hr>"
+   + "<br>"
+   + "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[14]["project name"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Description</b></u>: " + project[14]["project description"]
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Github - Sampling</b></u>: <a href=\'" + project[14]["project github sampling"] + "\' target=_blank>Click Me - Samplesss!</a>"
    + "<br><br>"
    + "<hr>"
    + "<br>"

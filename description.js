@@ -120,12 +120,64 @@ const project9 = {
    "project name" : "Web Crawl",
    "project description" : "In this project, I expand on an existing web crawler to measure the aspects of a crawl, study the characteristics of the crawl, download web pages from the crawl, and gather webpage metadata. "
       + "We can choose which news sites to crawl by editing some of the code, but for this repository, we crawl the USA Today news site (https://www.usatoday.com). "
-      + "After running, the crawl creates 3 CSV files (fetch_usatoday.csv, urls_usatoday.csv, visit_usatoday,csv) and 1 text file (CrawlReport_usatoday.txt)."
+      + "After running, the crawl creates 3 CSV files (fetch_usatoday.csv, urls_usatoday.csv, visit_usatoday,csv) and 1 text file (CrawlReport_usatoday.txt). "
       + "More information about what these 3 files are about are in the link below!",
    "project github crawl" : "https://github.com/svregala/https://github.com/svregala/Web_Crawling"
 }
 
-const project = [project1, project2, project3, project4, project5, project6, project7, project8, project9]
+const project10 = {
+   "project name" : "Hash Table Implementation using Linked Lists",
+   "project description" : "Using C++, I implemented a hash table using linked lists. This program can be tested using the command prompt in terminal or autonomously. "
+      + "Check out the program by reading more in the link!",
+   "project github hash" : "https://github.com/svregala/https://github.com/svregala/Hash_Table_Implementation_using_Linked_Lists"
+}
+
+const project11 = {
+   "project name" : "Scrabble Word Finder",
+   "project description" : "Using Java, given an existing dictionary (or user-provided dictionary) and a rack (starting letters), the program will output a list of possible combinations of letters that could be used from the rack sorted by score in descending order. "
+      + "Try the program yourself by clicking the link!",
+   "project github scrabble" : "https://github.com/svregala/Scrabble_Word_Finder"
+}
+
+const project12 = {
+   "project name" : "Mine Sweeper Game",
+   "project description" : "Using Java, I recreate the renowned Mine Sweeper game. "
+      + "Minesweeper is a game where mines are hidden in various random locations in a two-dimensional minefield. The player has to figure out where all the mines are without exploding a mine. They do this by repeatedly uncovering locations, and guessing mine locations, until they uncover all of the non-mine locations (win) or they explode a mine (lose). "
+      + "This is more than a game of chance, because when a non-mine square is uncovered it displays the number of mines adjacent to that square. The player can use that information to figure out where the mines are (or at least narrow down their locations). "
+      + "Try the game yourself on your local computer by clicking the link!",
+   "project github mine" : "https://github.com/svregala/Mine_Sweeper_Game"
+}
+
+const project13 = {
+   "project name" : "Image Compression using Vector Quantization",
+   "project description" : "Using Java, we better our understanding of image compression. We perform image compression using vector quantization. "
+      + "To compress an image with M=2 (2 adjacent pixels side by side), we first initialize our code words, N, which is the number of vectors (assume it's a power of 2 -- thus after quantization, each vector will need an index with logN bits). "
+      + "Then, we use K-Means clustering to cluster the vectors around each code word. Then, we refine and update the code words depending on the clusters that were created in K-Means clustering (programmed manually with no use of external libraries). "
+      + "After repeating the previous 2 steps until convergence, we quantize the input vectors to produce an output image. The extra credit is similar except it is able to handle values of M = 4, 16, and 64, in addition to M=2. "
+      + "Try out the program by clicking the link!",
+   "project github compression" : "https://github.com/svregala/Image_Compression_using_Vector_Quantization"
+}
+
+const project14 = {
+   "project name" : "Inverted Index Creation",
+   "project description" : "In this project, we write code using Java to create a unigram index and a bigram index that is a part of a self-contained, complete, minimal MapReduce process; "
+      + "it is code that indexes words from multiple text files (files exist in \"data\" folder), and outputs an inverted index that looks like what is shown in both unigram_index.txt and selected_bigram_index.txt. "
+      + "The input data in the data folder is already cleaned, e.g. \n and \r characters. However, \t character exists between the document ID and the document text (taken care of in the code in map method). In other words, the input files are in a key-value format where docID is the key, and the contents are the value; the key and value are separated by a tab. "
+      + "After running UnigramIndex.java and BigramIndex.java, unigram_index.txt and selected_bigram_index.txt are created respectively. "
+      + "Read more about it by clicking the link!",
+   "project github invert" : "https://github.com/svregala/Inverted_Index_Creation"
+}
+
+const project15 = {
+   "project name" : "Spatial Temporal Resampling and Aliasing",
+   "project description" : "In this project, we gain a practical understanding of resampling and filtering in the spatial and temporal domain. Part 1 explores sampling and aliasing issues in the spatial domain, while part 2 explores sampling and aliasing issues in the temporal domain. "
+      + "In part 1, we display 2 images side by side: the left image will be the original image, and the right side is a resampled version of the original image. The resampled image is a scaled down version of the original image (utilized 3x3 average neighborhood filtering technique); this algorithm allows us to overcome/meet the Nyquist sampling criteria, resulting in minimal aliasing. "
+      + "In part 2, we display 2 videos side by side: the left video is a clockwise rotating radial pattern at a certain speed, and the right video is the same thing as the left except it will be given an fps (frames per second) rate of display. For the video on the right, it must be that the refresh rate (fps) is more than twice the rotational speed for them to look the same. "
+      + "Check out the project in the link below!",
+   "project github sampling" : "https://github.com/svregala/Spatial_Temporal_Resampling_and_Aliasing"
+}
+
+const project = [project1, project2, project3, project4, project5, project6, project7, project8, project9, project10, project11, project12, project13, project14, project15]
 
 const exp1 = {
    "company" : "Juni Learning",
