@@ -244,7 +244,7 @@ const exp5 = {
    "role" : "California NanoSystems Institute Research Intern (Apprenticeship)",
    "location" : "Santa Barbara, CA",
    "duration" : "August 2017–August 2017",
-   "desc" : "With a groupm, I performed research on Generalizing Categorization of the brain with a team, and conducted tests on human subjects to stimulate their ability to implicitly and explicitly categorize images of objects."
+   "desc" : "With a group, I performed research on Generalizing Categorization of the brain with a team, and conducted tests on human subjects to stimulate their ability to implicitly and explicitly categorize images of objects."
    + "We analyzed how the results of categorizing adaptability could be applied to computer vision."
 }
 
