@@ -99,7 +99,33 @@ const project6 = {
    "project github video" : "https://github.com/svregala/Video_Index_Creation_with_Interactive_Player"
 }
 
-const project = [project1, project2, project3, project4, project5, project6]
+const project7 = {
+   "project name" : "Multi-threading: Token Bucket Simulation",
+   "project description" : "Using C, I designed a traffic shaper to transmit/service packets controlled by a token bucket filter using multi-threading within a single process. "
+      + "I implemented five different threads working together to efficiently transmit packet objects in a time-driven fashion; when the program runs, it produces a simulation trace (printed timestamps) for every important event. "
+      + "I engineered the program to account for versatility such as processing input files and modifying settings using user-specified parameters. "
+      + "Read about the bucket filter in the link below!",
+   "project github bucket" : "https://github.com/svregala/Multithreading_Token_Bucket_Simulation"
+}
+
+const project8 = {
+   "project name" : "Bank Statement Formatter: Doubly-Linked Circular List",
+   "project description" : "Using C, I implemented a doubly-linked circular list. It will be used as the representation for a list of transactions (or transaction objects). "
+      + "Moreover, this is a program that will process a file of unsorted transaction records and produce a sorted transaction history with computed balances; it will also check for various types of file and format errors. "
+      + "Test out the program by reading more below!",
+   "project github bank" : "https://github.com/svregala/Bank_Statement_Formatter_DoublyLinked_Circular_List"
+}
+
+const project9 = {
+   "project name" : "Web Crawl",
+   "project description" : "In this project, I expand on an existing web crawler to measure the aspects of a crawl, study the characteristics of the crawl, download web pages from the crawl, and gather webpage metadata. "
+      + "We can choose which news sites to crawl by editing some of the code, but for this repository, we crawl the USA Today news site (https://www.usatoday.com). "
+      + "After running, the crawl creates 3 CSV files (fetch_usatoday.csv, urls_usatoday.csv, visit_usatoday,csv) and 1 text file (CrawlReport_usatoday.txt)."
+      + "More information about what these 3 files are about are in the link below!",
+   "project github crawl" : "https://github.com/svregala/https://github.com/svregala/Web_Crawling"
+}
+
+const project = [project1, project2, project3, project4, project5, project6, project7, project8, project9]
 
 const exp1 = {
    "company" : "Juni Learning",
