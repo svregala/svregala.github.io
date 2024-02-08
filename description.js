@@ -7,7 +7,7 @@ const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks fo
    + "<b style= 'color: rgb(78, 175, 78);'>In</b> my free time, I like to hang out with my family and friends; we play basketball and videogames, explore new places, and eat good food together. "
    + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics, more specifically, the purpose of life and our time here on Earth. "
    + "<b style= 'color: rgb(78, 175, 78);'>If</b> you get this far in the about me, thank you! <b style= 'color: rgb(78, 175, 78);'>It means a lot to me!</b> "
-   + "<b style= 'color: rgb(78, 175, 78);'>If</b> we ever meet, let me show you a magic trick using cards."
+   + "If we ever meet, let me show you a magic trick using cards."
 
 
 const educationGrad = {
