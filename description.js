@@ -5,7 +5,9 @@ const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks fo
    + "<b style= 'color: rgb(78, 175, 78);'>I</b> enjoy learning and applying new technologies, and thus enjoy the process of building sofware applications; "
    + "with no specified interest just yet, I'm very open to exploring and working in different parts of the software engineering/development industry. "
    + "<b style= 'color: rgb(78, 175, 78);'>In</b> my free time, I like to hang out with my family and friends; we play basketball and videogames, explore new places, and eat good food together. "
-   + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics, more specifically, the purpose of life and our time here on Earth."
+   + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics, more specifically, the purpose of life and our time here on Earth. "
+   + "<b style= 'color: rgb(78, 175, 78);'>If</b> you get this far in the about me, thank you! <b style= 'color: rgb(78, 175, 78);'>It means a lot to me!</b> "
+   + "<b style= 'color: rgb(78, 175, 78);'>If</b> we ever meet, let me show you a magic trick using cards."
 
 
 const educationGrad = {
@@ -31,22 +33,25 @@ const educationHS = {
 
 const education = [educationGrad, educationUndergrad, educationHS]
 
-const program_web = "Java, JavaScript, Python, Swift, C, C++, HTML, CSS, Rest API, JSON, XML, Node.js"
-const tools_frameworks = "SwiftUI, Angular, Bootstrap, Flask, Express, Google Cloud Platform (GCP), PostgreSQL, MongoDB, RDBMS, Unix/Linux, Git, Postman, VScode, Xcode, IntelliJ, Eclipse, Sublime Text, LaTeX"
-const language = "Tagalog (Conversational), Spanish (Conversational)"
+const program_lang = "Java, Python, JavaScript, C, C++"
+const web_mobile_app_dev = "HTML, CSS, Angular, Bootstrap, iOS App Development (Swift & SwiftUI)"
+const backend_tech = "Node.js, Express.js, REST API, Python Flask, Docker"
+const db_cloud = "SQL (PostgreSQL), NoSQL (MongoDB), Google Cloud Platform (GCP)"
+const tools = "Git, GitHub, Postman"
 
-const skills = [program_web, tools_frameworks, language]
+const skills = [program_lang, web_mobile_app_dev, backend_tech, db_cloud, tools]
 
 const project1 = {
-   "project name" : "Yelp Business Search, Responsive Web and Mobile Application & iOS App Development",
-   "project description" : "Overall, I built a fully responsive web application to search for thousands of " 
-      + "businesses with the Yelp API using Angular, HTML, CSS, TypeScript, RxJS, and Bootstrap on the client side. "
+   "project name" : "Business Finder: User-Friendly Yelp Alternative – Responsive Web and Mobile Application",
+   "project description" : "Overall, I built a responsive web app serving as a simplified iteration of Yelp, facilitating user exploration and reservation requests. " 
       + "The application is deployed and managed on Google Cloud Platform (GCP). "
-      + "The backend application is written in Node.js on the server side with the Express framework. "
+      + "The frontend was constructed using Angular, HTML, CSS, TypeScript, and Bootstrap to which I created a dynamic and responsive user interface. "
+      + "I created the backend server with Node.js and Express framework, serving as a RESTful API endpoint; I leveraged the Yelp API to search for thousands of businesses and employed PostgreSQL as the database system for retrieving, storing, and deleting user reservation requests. "
       + "The application consists of features such as navigation bars, autocomplete, routing, search form, results table, business details card, and reservation form. "
+      + "I also acquired proficiency in Docker to containerize the app, gaining hands-on experience in deployment and management practices. "
       + "To further develop my skills, I expanded the web application to a native iOS application. I utilized Swift and SwiftUI framework on XCode to build an iOS application to which I delivered an intuitive mobile user interface, "
       + "providing users coherent results and informative details about the specified businesses. "
-      + "Morever, I practiced the Model-View-ViewModel (MVVM) design pattern and applied third-party libraries through Swift Package Manager such as Alamofire, Kingfisher, and SwiftyJSON.",
+      + "I practiced the Model-View-ViewModel (MVVM) design pattern and applied third-party libraries through Swift Package Manager such as Alamofire, Kingfisher, and SwiftyJSON.",
    "Web link" : "https://csci-homework-8.wl.r.appspot.com/",
    "project github iOS" : "https://github.com/svregala/Yelp_Business_Search_iOS_App_Development",
    "project github web" : "https://github.com/svregala/Yelp_Business_Search_Responsive_Website_and_Mobile_Development",
@@ -141,7 +146,8 @@ const project11 = {
 
 const project12 = {
    "project name" : "Mine Sweeper Game",
-   "project description" : "Using Java, I recreate the renowned Mine Sweeper game. "
+   "project description" : "Using Java, I recreated the classic Mine Sweeper game featuring a graphical user interface, providing an intuitive window for user interaction. "
+      + "I programmed the game logic to simulate the puzzle challenge of uncovering squares in a minefield while avoiding hidden mines. "
       + "Minesweeper is a game where mines are hidden in various random locations in a two-dimensional minefield. The player has to figure out where all the mines are without exploding a mine. They do this by repeatedly uncovering locations, and guessing mine locations, until they uncover all of the non-mine locations (win) or they explode a mine (lose). "
       + "This is more than a game of chance, because when a non-mine square is uncovered it displays the number of mines adjacent to that square. The player can use that information to figure out where the mines are (or at least narrow down their locations). "
       + "Try the game yourself on your local computer by clicking the link!",
@@ -209,8 +215,7 @@ const exp1 = {
    "role" : "Coding Instructor (Java & Python)",
    "location" : "San Francisco, CA (Remote)",
    "duration" : "June 2021-Present",
-   "desc" : "My main role is to educate and engage students to learn foundational concepts of Java and Python in a challenging course. "
-      + "I also develop a class schedule and administer homework assignments for students to follow to succeed in class."
+   "desc" : "I teach students (K-12) foundational and complex concepts of Java, Python, C++, and Web Development courses through 1-on-1 lessons and provide detailed feedback on students' progress and learning goals."
 }
 
 const exp2 = {

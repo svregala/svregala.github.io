@@ -39,6 +39,19 @@ document.getElementById("skills").onclick = function() {
       + "\n<u><b style= 'color: rgb(78, 175, 78);'>Language</b></u>: " + skills[2]
 }
 
+document.getElementById("skills").onclick = function() {
+   document.getElementById('disp_text').innerHTML = 
+   "<u><b style= 'color: rgb(78, 175, 78);'>Programming Languages/b></u>: " + skills[0]
+   + "<br>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Web & Mobile App Development</b></u>: " + skills[1]
+   + "<br>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Backend Technologies</b></u>: " + skills[2]
+   + "<br>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Database & Cloud</b></u>: " + skills[3]
+   + "<br>"
+   + "\n<u><b style= 'color: rgb(78, 175, 78);'>Tools</b></u>: " + skills[4]
+}
+
 document.getElementById("projects").onclick = function() {
    document.getElementById('disp_text').innerHTML =
    "<u><b style= 'color: rgb(78, 175, 78);'>Project Name</b></u>: " + project[5]["project name"]
