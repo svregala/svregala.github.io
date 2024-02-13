@@ -213,7 +213,8 @@ const exp1 = {
    "role" : "Coding Instructor (Java & Python)",
    "location" : "San Francisco, CA (Remote)",
    "duration" : "June 2021-Present",
-   "desc" : "I teach students (K-12) foundational and complex concepts of Java, Python, C++, and Web Development courses through 1-on-1 lessons and provide detailed feedback on students' progress and learning goals."
+   "desc" : "I teach weekly one-on-one coding lessons to elementary, junior high, and high school students in advanced Java, Python, C++, and Web Development using a project-based curriculum, and provide detailed feedback on students’ progress and learning goals. "
+   + "I develop thorough teaching plans and maintain records across various courses and skill levels, with an average class size of 5-12 students per week."
 }
 
 const exp2 = {
