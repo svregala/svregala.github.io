@@ -210,7 +210,7 @@ const project = [project1, project2, project3, project4, project5, project6, pro
 
 const exp1 = {
    "company" : "Juni Learning",
-   "role" : "Coding Instructor (Java & Python)",
+   "role" : "Computer Science Instructor",
    "location" : "San Francisco, CA (Remote)",
    "duration" : "June 2021-Present",
    "desc" : "I teach weekly one-on-one coding lessons to elementary, junior high, and high school students in advanced Java, Python, C++, and Web Development using a project-based curriculum, and provide detailed feedback on students’ progress and learning goals. "
