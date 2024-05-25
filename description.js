@@ -214,7 +214,7 @@ const exp1 = {
    "location" : "San Francisco, CA (Remote)",
    "duration" : "June 2021-Present",
    "desc" : "I teach weekly one-on-one coding lessons to elementary, junior high, and high school students in advanced Java, Python, C++, and Web Development using a project-based curriculum, and provide detailed feedback on students’ progress and learning goals. "
-   + "I develop thorough teaching plans and maintain records across various courses and skill levels, with an average class size of 8-12 students per week."
+   + "I develop thorough teaching plans and maintain records across various courses and skill levels, with an average class size of 8-12 students per week. "
    + "Moreover, I have led more than 380 lessons!"
 }
 
