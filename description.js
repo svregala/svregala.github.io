@@ -2,7 +2,7 @@ const about = "<b style= 'color: rgb(78, 175, 78);'>Hi</b>, I'm Steve! Thanks fo
    + "<b style= 'color: rgb(78, 175, 78);'>I</b> recently graduated (May 2023) from the University of Southern California (USC) with a Master of Science (MS) degree in Computer Science. " 
    + "<b style= 'color: rgb(78, 175, 78);'>For</b> my undergraduate studies, I attended the University of California, Santa Barbara (UCSB) " 
    + "and graduated with a Bachelor of Science (BS) degree in Applied Mathematics and a minor in Statistical Science. "
-   + "<b style= 'color: rgb(78, 175, 78);'>I</b> enjoy learning and applying new technologies, and thus enjoy the process of building sofware applications; "
+   + "<b style= 'color: rgb(78, 175, 78);'>I</b> enjoy learning and applying new technologies, and thus enjoy the process of building software applications; "
    + "with no specified interest just yet, I'm very open to exploring and working in different parts of the software engineering/development industry. "
    + "<b style= 'color: rgb(78, 175, 78);'>In</b> my free time, I like to hang out with my family and friends; we play basketball and videogames, explore new places, and eat good food together. "
    + "<b style= 'color: rgb(78, 175, 78);'>Moreover</b>, I like to discuss philosophy and physics, more specifically, the purpose of life and our time here on Earth. "
